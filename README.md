@@ -4,6 +4,7 @@ Welcome to [Project Herophilus](https://en.wikipedia.org/wiki/Herophilos), this 
 
 Several of the capabilities contained within this organization are already used within other organization and we are so proud that these open contributions can help our healthcare.
 
+## Key Areas of Focus
 As you look at this page just keep in mind it is ONLY a lionding page intended to help explain all the Project Herophilus efforts.
 
 | Key Area | Business Purpose |
