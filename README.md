@@ -10,7 +10,7 @@ healthcare's ability to access and process data.
 Several of the capabilities contained within this organization are already used within other organizations and we are 
 so proud that these open contributions can help our healthcare.
 
-## Key Areas of Focus
+## Supportive Repositories for All Work Efforts
 As you look at this page just keep in mind it is ONLY a lionding page intended to help explain all the Project Herophilus 
 efforts. While there are key areas of focus for this effort we also have all out assets put into one repository for 
 
