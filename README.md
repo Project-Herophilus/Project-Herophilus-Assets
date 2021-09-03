@@ -10,18 +10,25 @@ healthcare's ability to access and process data.
 Several of the capabilities contained within this organization are already used within other organizations and we are 
 so proud that these open contributions can help our healthcare.
 
-## Key Areas of Focus
+## Supportive Repositories for All Work Efforts
 As you look at this page just keep in mind it is ONLY a lionding page intended to help explain all the Project Herophilus 
 efforts. While there are key areas of focus for this effort we also have all out assets put into one repository for 
-simple access and re-use, please look here [Project Herophilus Assets](https://github.com/Project-Herophilus/Project-Herophilus-Assets)
-to find all the commmon assets.
+
+| Key Area | Business Purpose |
+|----------|------------------|
+|Project-Herophilus-Assets| Platform assets like diagrams, images, presentations, test data and industry published content.| 
+|iDaaS-Addons|Add-ons to help implementations - data mappers, database files, data simulators and more.|
+
+## Key Areas of Focus
+As you look at this page just keep in mind it is ONLY a lionding page intended to help explain all the Project Herophilus 
+efforts. 
 
 | Key Area | Business Purpose |
 |----------|------------------|
 |DataSynthesis| The need for synthetic/fictitous data that resembles real information| 
-|Event-Builder| A library that enables parsing, processing and transforming data while enabling various capabilities. Can be used within iDaaS or on its own. |
-|HCD-DataViewer| Simple component that enables users to see various forms of healthcare industry data in a relational database management ayatem. Also there are plans to build out APIs and a sample UI for it. |
 |iDaaS-Connect| Connecting to all types of data and providing access to information in near realtime. |
+|Event-Builder| A library that enables parsing, processing and transforming data while enabling various capabilities. Can be used within iDaaS or on its own. |
+|iDaaS-Route| Routing of data - code and business rules based intelligent routing exist. |
 |iDaaS-DReAM| Business rules based platforms designed for usage within healthcare. |
 |iDaaS-KIC| Knowledge, Insight and Conformance is all about providing the ability to process errors, audit and other data. This consists of the endpoints, processing and persistence needed to support the platform.|
 
