@@ -9,6 +9,13 @@ Assets currently available provide tools for configuration, testing, data integr
 
 Red Hat, is a leader in enterprise open source and offers support, security, services and training. In alignment with healthcare and technology's embrace of community and open source, Red Hat has been a key sponsor and supporter in establishing Project Herophilis. Red Hat is keeping its enterprise open source leading approach and operates a subset of these assets “downstream.” While the “accelerators” are provided as is, Red Hat customers can get secure and supported software the “accelerators” run atop for their production and other business needs. 
 
+## Detailed Documentation Site
+While we work to put everything into a user firendly and consumable format, we also have developed a very straight forward and specific documentation site: https://project-herophilus.github.io/Project-Herophilus-Assets/
+
+## Key Downstream Implementations
+As mentioned above Red Hat is a key supporter and has a equivalent enterprise supportable software the "accelerators" run atop. While the accelerators are provided "as is" you can find the code available at  https://github.com/RedHat-Healthcare/.
+
+
 ## Supporting Repositories for All Work Efforts
 As you look at this page just keep in mind it is ONLY a lionding page intended to help explain all the Project Herophilus 
 efforts. While there are key areas of focus for this effort we also have all out assets put into one repository for 
