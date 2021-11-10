@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "c448cda9-54c7-4f82-92fd-20fe380f609a",
+		"name": "HAPI-ProjectHerophilus-FHIRServer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9881/projherophilus/account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9881",
+					"path": [
+						"projherophilus",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllergyIntollerance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9881/projherophilus/allergyintollerance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9881",
+					"path": [
+						"projherophilus",
+						"allergyintollerance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Claim",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9881/projherophilus/claim",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9881",
+					"path": [
+						"projherophilus",
+						"claim"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Condition",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9881/projherophilus/condition",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9881",
+					"path": [
+						"projherophilus",
+						"condition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9881/projherophilus/consent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9881",
+					"path": [
+						"projherophilus",
+						"consent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Measure",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9881/projherophilus/measure",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9881",
+					"path": [
+						"projherophilus",
+						"measure"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Questionnaire",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9881/projherophilus/questionnaire",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9881",
+					"path": [
+						"projherophilus",
+						"questionnaire"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QuestionnaireResponse",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9881/projherophilus/questionnaireresponse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9881",
+					"path": [
+						"projherophilus",
+						"questionnaireresponse"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "FHIRDeveloper123",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "fhiruser",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
