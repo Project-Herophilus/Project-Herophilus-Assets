@@ -1,0 +1,12 @@
+{
+	"device": "cpap",
+    "sn": "3-198-49247",
+    "device id": "58696043",
+	"date": " 2022-01-22T03:15:06",
+	"pressure":"13.8",
+	"clearapneas":"1",
+	"obstructiveapneas":"2",
+	"hyponeas":"1",
+	"usagetime":"1:07",
+	"maskfit":"0"
+}
