@@ -20,11 +20,6 @@ git clone https://github.com/Project-Herophilus/iDaaS-Connect.git
 ## Step 3: Running the App: Maven Commands or Code Editor
 This section covers how to get the application started.
 + Maven: The following steps are needed to run the code. Either through your favorite IDE or command line
-```
-git clone <repo name>
-For example to clone iDaaS-Connwct:
-git clone https://github.com/Project-Herophilus/iDaaS-Connect.git
- ```
 You can either compile at the base directory or go to the specific iDaaS-Connect acceelerator. Specifically, you want to
 be at the same level as the POM.xml file and execute the following command: <br/>
 ```
