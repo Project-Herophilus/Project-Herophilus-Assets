@@ -44,6 +44,7 @@ If you don't run the code from an editor or from the maven commands above. You c
 commands above to build a jar file. Then, go to the /target directory and run the following command: <br/>
 ```
 java -jar <jarfile>.jar 
+```
 
 ### Design Pattern/Accelerator Configuration
 All iDaaS Design Pattern/Accelelrators have application.properties files to enable some level of reusability of code and simplfying configurational enhancements.<br/>
