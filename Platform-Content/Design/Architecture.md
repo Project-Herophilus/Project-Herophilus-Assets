@@ -1,4 +1,4 @@
-Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Main GitHub Org/a>
+Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Main GitHub Org</a>
 
 # Architecture
 As you hopefully seen we have worked really dilligently to true and ensure a very sound set of principles with anything 
