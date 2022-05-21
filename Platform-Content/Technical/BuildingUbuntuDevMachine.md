@@ -1,16 +1,19 @@
-Return to the <a href="https://project-herophilus.github.io/Project-Herophilus-Assets/" target="_blank">Main Page</a>
+Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Main GitHub Org. Site</a>
 
 # Background
 The goal of this document is to help with the basics of installing an Ubuntu machine and the needed 
 artifacts. We do not take a community position on the specific OS to leverage for development and implementation. 
-Many resources have expressed happiness in the performance of Ubuntu overall.
+Many resources have expressed happiness in the performance of Ubuntu overall. This guide has been used from Ubuntu 
+20 to Ubuntu 22
 
 # General Pre-Requisites
 After installing and setting up the system either on dedicated, virtual or IAAS based hardware then
 we recommend doing the following to ensure you have enough space and dont run into some basic issues.
 
-We would recommend that you implement directories outside of the /home directory to not run into substantial potential space issues with /home and so forth.
+We would recommend that you implement directories outside of the /home directory to not run into substantial potential 
+space issues with /home and so forth.
 What we have built out is directories for each of the following:
+- /Data
 - /Development
 - /OpenSourceTech
 - /RedHatTech - (If you download any supported RedHat Bits)
@@ -25,7 +28,7 @@ Changing ownership and groups examples https://www.thegeekstuff.com/2012/06/chow
 The following are all the development tools and the supporting assets needed to do some form of development and
 implementation of iDaaS reference architectures.
 
-### Code Repository Management
+### Code Repository/Artifact Management
 
 #### GIT
 The most popular version control management system and the one we leverage.
@@ -33,8 +36,6 @@ The most popular version control management system and the one we leverage.
 ```
 sudo apt install git-all
 ```
-
-### Package Repository
 
 #### Maven
 his is needed on development machines and is the central repository management tool.
@@ -109,19 +110,6 @@ There are two common RDBMS - Relational Databases technologies that we support. 
 done has been in MySQL/MariaDB. There are some nuances so you will notice for a few capabilities we
 have seperate scripts for each of these technologies.
 
-### MySQL (Using MariaDB):
-For any database server on any platform there could be additional steps needed to make them completely 
-functional. 
-
-https://www.digitalocean.com/community/tutorials/how-to-install-mariadb-on-ubuntu-20-04 <br/>
-
-```
-sudo apt install mariadb-server
-``` 
-For MySQL Community Server https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
-```
-sudo apt install mysql-server
-``` 
 
 ### PostgresQL
 https://ubuntu.com/server/docs/databases-postgresql

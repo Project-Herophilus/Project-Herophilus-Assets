@@ -1,5 +1,8 @@
+Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Main GitHub Org. Site</a>
+
 # Information
-Within this content we plan on general covering all the core aspects on how we plan on maintaining our platform as we progress forward and continue
+Within this content we plan on general covering all the core aspects on how we plan on maintaining our platform 
+as we progress forward and continue
 mature.
 
 ## Ongoing Enhancements

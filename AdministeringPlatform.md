@@ -1,3 +1,5 @@
+Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Main GitHub Org. Site</a>
+
 # Administering the Platform - Management and Insight of Components
 Administering and seeing what the plaform is doing is also critical. Within each specific repository there is an administrative user interface that allows for monitoring and insight into the connectivity of any endpoint. Additionally, there is also the implementation to enable implementations to build there own by exposing the metadata. The data is exposed and can be used in numerous very common tools like Data Dog, Prometheus and so forth.
 This capability to enable would require a few additional properties to be set.

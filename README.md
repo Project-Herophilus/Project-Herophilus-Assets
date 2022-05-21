@@ -1,4 +1,8 @@
+Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Main GitHub Org. Site</a>
+
 # Background
+Project-Herophilus is about helping any type of organization leverage healthcare data (modern to legacy) and through our 
+cloud native platform(s) to enable innovation. <br/> 
 
 ![Cloud Agnostic](/images/iDaaS-Platform/Implementations/Implementations-Gen-CloudAgnostic.png)
 

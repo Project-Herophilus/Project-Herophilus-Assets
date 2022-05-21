@@ -1,9 +1,7 @@
-Return to the <a href="https://project-herophilus.github.io/Project-Herophilus-Assets/" target="_blank">Main Page</a>
+Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Main GitHub Org. Site</a>
 
 # Background
-For this specific development image I started with RHEL 8.3; however, I also ran the on RHEL 8.2. Keep
-in mind that your RHEL VM will only be good for 2-3 months as subscriptions can lapse and must be renewed
-through the subscription manager. Base RHEL install, update subscription manager and patch. As for the install 
+For this specific development image I started with RHEL 8.3; however, I also ran the on RHEL 8.5. As for the install 
 typically the installs are the Server with GUI where lots of development tools and libraries are selected.
 The ONLY development language required for iDaaS specifically is Java SDK. The other development
 languages are used for a variety of efforts and needs. We don't cover Python in this section but those
@@ -11,10 +9,13 @@ instructions can be easily found online.
 
 # General Pre-Requisites
 After installing and setting up the system either on dedicated, virtual or IAAS based hardware then
-we recommend doing the following to ensure you have enough space and dont run into some basic issues.
-
-We would recommend that you implement directories outside of the /home directory to not run into substantial potential space issues with /home and so forth.
+we recommend doing the following to ensure you have enough space and dont run into some basic issues. For this OS 
+you will need to plan out and size the disk to ensure you will not run out of space. The typical installation that
+has been sucesful uses a customixzed filesystem to avoid running out of space in common mount point areas.
+We would recommend that you implement directories outside of the /home directory to not run into substantial 
+potential space issues with /home and so forth.
 What we have built out is directories for each of the following:
+- /Data
 - /Development
 - /OpenSourceTech
 - /RedHatTech - (If you download any supported RedHat Bits)

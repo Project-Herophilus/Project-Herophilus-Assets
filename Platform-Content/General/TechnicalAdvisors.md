@@ -1,4 +1,4 @@
-Return to the <a href="https://project-herophilus.github.io/Project-Herophilus-Assets/" target="_blank">Main Page</a>
+Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Main GitHub Org. Site</a>
 
 # Technical Advisors
 A very large part of our work on this effort is to get industry advise and council. In order to do this effectively we

@@ -1,22 +1,26 @@
-Return to the <a href="https://project-herophilus.github.io/Project-Herophilus-Assets/" target="_blank">Main Page</a>
+Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Main GitHub Org. Site</a>
 
 # Background
 The goal of this document is to help with the basics of installing Fedora and the needed artifacts 
-on Fedora. Many resources have followed this and expressed happiness in the performance of Fedora.
+on Fedora. This document covers Fedora 35 and Fedora 36 specifically. We have numerous installs done with both the 
+Desktop and Server releases.
 
 # General Pre-Requisites
 After installing and setting up the system either on dedicated, virtual or IAAS based hardware then
 we recommend doing the following to ensure you have enough space and dont run into some basic issues.
-
-We would recommend that you implement directories outside of the /home directory to not run into substantial potential space issues with /home and so forth.
+We would recommend that you implement directories outside of the /home directory to not run into substantial 
+potential space issues with /home and so forth.
 What we have built out is directories for each of the following:
+- /Data
 - /Development
 - /OpenSourceTech
 - /RedHatTech - (If you download any supported RedHat Bits)
   Here is a general link for knowledge: https://averagelinuxuser.com/linux-root-folders-explained/ <br/>
   Here are some generic instructions we have for creating /Development
 ```
-sudo mkdir /Development
+1. Go to a terminal window
+2. cd /
+3. sudo mkdir /Development
 ```
 Changing ownership and groups examples https://www.thegeekstuff.com/2012/06/chown-examples/
 
@@ -24,7 +28,7 @@ Changing ownership and groups examples https://www.thegeekstuff.com/2012/06/chow
 The following are all the development tools and the supporting assets needed to do some form of development and
 implementation of iDaaS reference architectures.
 
-### Code Repository Management
+### Code Repository/Artifact Management
 
 #### GIT
 The most popular version control management system and the one we leverage.
@@ -32,8 +36,6 @@ The most popular version control management system and the one we leverage.
 ```
 sudo dnf install git
 ```
-
-### Package Repository
 
 #### Maven
 his is needed on development machines and is the central repository management tool.
@@ -80,7 +82,7 @@ From the command line: <br>
 
 ## IntelliJ
 These specific steps focus around IntelliJ, numerous contributors and resources working with iDaaS use some
-flavor of IntelliJ. For simplicity we will download the files to /username/home/Downloads.
+flavor of IntelliJ (Community or their subscription). For simplicity we will download the files to /<username>/home/Downloads.
 
 ### Toolbox App
 Download the <a href="http://www.jetbrains.com/toolboxapp" target="_blank">IntelliJ Tolbox App Download</a> for the link.<br>
@@ -110,17 +112,6 @@ https://kafka.apache.org/quickstart
 There are two common RDBMS - Relational Databases technologies that we support. MOST of the work
 done has been in MySQL/MariaDB. There are some nuances so you will notice for a few capabilities we
 have seperate scripts for each of these technologies.
-
-### MySQL (Using MariaDB):
-https://fedoraproject.org/wiki/MariaDB <br/>
-
-```
-sudo dnf install mariadb
-``` 
-For MySQL Community Server
-```
-sudo dnf install mysql-community-server
-``` 
 
 ### PostgresQL
 https://fedoraproject.org/wiki/PostgreSQL

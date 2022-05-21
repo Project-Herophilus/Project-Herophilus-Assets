@@ -1,4 +1,4 @@
-Return to the <a href="https://project-herophilus.github.io/Project-Herophilus-Assets/" target="_blank">Main Page</a>
+Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Main GitHub Org. Site</a>
 
 # Code Repsotiories
 The following are all the relevant code repositories that are involved with Project Herophilus

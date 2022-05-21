@@ -1,4 +1,4 @@
-﻿Return to the <a href="https://project-herophilus.github.io/Project-Herophilus-Assets/" target="_blank">Main Page</a>
+﻿Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Main GitHub Org. Site</a>
 
 # Roadmap
 We wanted to provide a place where resources can see what we are working on. Currently, we have been very engaged with so many implementations, we are working on a way to work with more

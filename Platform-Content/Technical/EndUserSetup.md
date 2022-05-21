@@ -1,4 +1,4 @@
-Return to the <a href="https://project-herophilus.github.io/Project-Herophilus-Assets/" target="_blank">Main Page</a>
+Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Main GitHub Org. Site</a>
 
 # Setting Up and End User Environment
 As we worked to establish iDaaS we wanted to ensure that we could enable complex platforms and systems to
