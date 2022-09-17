@@ -10,25 +10,31 @@ Please see the following files we have included to try and help: <br/>
 [Kafka Non-Windows](https://github.com/RedHat-Healthcare/iDaaS-Demos/blob/master/Kafka.md)<br/>
 [Kafka Windows](https://github.com/RedHat-Healthcare/iDaaS-Demos/blob/master/KafkaWindows.md)<br/>
 
-## Step 2: Cloning the Code Repository
+## Step 2: Cloning or Downloading the Code Repository
 This section covers how to get the application cloned and downloaded.
-+ Maven: The following steps are needed to run the code. Either through your favorite IDE or command line
++ Maven: The following steps are needed to run the code. Either through your favorite IDE or command line. The following command will
+clone the iDaaS-Connect repository and all it's submodules:
 ```
 git clone <repo name>
 For example to clone iDaaS-Connwct:
 git clone https://github.com/Project-Herophilus/iDaaS-Connect.git
  ```
-+ You can also go ahead and download the code from a specific repository and then unzip it as well.
++ You can also go ahead and download the code from a specific repository and then unzip it as well. To download just click on the Code
+button and select the Download Zip option.
 
-## Step 3: Running the App: Command Line
-This section covers how to get the application started.
+## Step 3: Building the App: Command Line
+This section covers how to get the application built.
 + Maven: The following steps are needed to run the code. Either through your favorite IDE or command line
 You can either compile at the base directory or go to the specific iDaaS-Connect acceelerator. Specifically, you want to
 be at the same level as the POM.xml file and execute the following command: <br/>
 ```
 mvn clean install
 ```
-You can run the individual efforts with a specific command, it is always recommended you run the mvn clean install first.
+
+## Step 4: Running the App: Command Line
+You dont necessarily have to run Step 3 first; however, personnel experience and several contributors have strongly expressed that it is
+just a cleaner way to ensure all the assets are pulled and if anything is needed or issues the mvn clean install should show it.
+
 Here is the command to run the design pattern from the command line: <br/>
 ```
 mvn spring-boot:run
@@ -50,7 +56,7 @@ In order to run multiple iDaaS integration applications we had to ensure the int
 the application uses. In order to do this we MUST set the server.port property otherwise it defaults to port 8080 and ANY additional
 components will fail to start. 
   
-iDaaS Connect HL7 uses 9980. You can change this, but you will have to ensure other applications are not
+The following section is designed around the application.properties ssupporting iDaaS Connect HL7; however, it is aplicable across all iDaaS-Connect assets. iDaaS Connect HL7 uses 9980 for its server port (where the user management interface will run from). You can change this, but you will have to ensure other applications are not
 using the port you specify.
 
 ```
@@ -64,9 +70,14 @@ idaas.adtACKResponse=true
 idaas.adtTopicName=mctn_mms_adt
 idaas.hl7ORM_Directory=data/orm
 ```
+### Specific Examples of using Parameters  
 
-It is possible to overwrite configuration by:
-1. Providing parameters via command line e.g.
-`java -jar <jarfile>.jar --idaas.adtPort=10009`
-2. Creating an application.properties next to the idaas-connect-hl7.jar in the target directory
-3. Creating a properties file in a custom location `java -jar <jarfile>.jar --spring.config.location=file:./config/application.properties`
+ - To specify one different attribute being changed
+ ```
+ java -jar <jarfile>.jar --idaas.adtPort=10009
+ ```
+ - To use a properties file in a custom location 
+ ```
+ java -jar <jarfile>.jar --spring.config.location=file:./config/application.properties`
+```
+ 
