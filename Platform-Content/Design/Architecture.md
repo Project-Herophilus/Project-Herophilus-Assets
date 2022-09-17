@@ -20,4 +20,4 @@ As we looked at the contributions and all the principals we had we quickly took 
 were leveraging these capabilities. With such a wide variety of healthcare business leveraging these existing
 capabilities we moved to q high level conceptual architecture of what the iDaaS platform looked like:
 <br/><br/>
-![iDaaS Conceptual Architecture](../../images/iDaaS-Platform/Implementations-Cloud Agnostic_v6.png)
+![iDaaS Conceptual Architecture](../../images/iDaaS-Platform/Implementations-CloudAgnostic_v6.png)
