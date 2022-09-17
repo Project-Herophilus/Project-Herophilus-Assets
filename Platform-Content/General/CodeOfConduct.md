@@ -4,7 +4,6 @@ Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Ma
 
 If you have seen the Code of Conduct below it is because we looked at numerous plaxces and took several examples and roled up numerous things into one.<br/><br/>
 
-# CONTRIBUTOR COVENANT CODE OF CONDUCT<br/>
 ## Our Pledge
 We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation. We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
 
