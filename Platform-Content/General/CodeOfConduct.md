@@ -2,11 +2,10 @@ Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Ma
 
 # Intelligent DaaS (Data As A Service) - Code of Conduct
 
-If you have seen the Code of Conduct below it is because we looked at numerous plaxces and took several examples and roled up numerous things into one.
-<br/><br/>
+If you have seen the Code of Conduct below it is because we looked at numerous plaxces and took several examples and roled up numerous things into one.<br/><br/>
 
-CONTRIBUTOR COVENANT CODE OF CONDUCT<br/>
-# Our Pledge
+# CONTRIBUTOR COVENANT CODE OF CONDUCT<br/>
+## Our Pledge
 We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation. We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
 
 ## Our Standards
@@ -26,11 +25,12 @@ Examples of unacceptable behavior include: <br/>
 
 ## Enforcement Responsibilities
 Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful. Community leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.
+
 ### Scope
 This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
 
 ### Enforcement
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement via email. Please email alscott@redhat.com with a mail subject of CodeOfConduct Violation and within the details of your email please share as much content (including any screen shots or other support materials). All complaints will be reviewed and investigated promptly and fairly.  All community leaders are obligated to respect the privacy and security of the reporter of any incident.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement via email. Please email balanscott@outlook.com with a mail subject of CodeOfConduct Violation and within the details of your email please share as much content (including any screen shots or other support materials). All complaints will be reviewed and investigated promptly and fairly.  All community leaders are obligated to respect the privacy and security of the reporter of any incident.
 
 ### Enforcement Guidelines
 Community leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:
