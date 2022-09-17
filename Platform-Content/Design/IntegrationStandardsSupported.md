@@ -23,13 +23,13 @@ The Intelligent DaaS (Data as a Service) Platform has been tested and has the fo
 
 |Message Trigger| Details |
 |------|------|
-|<a href="https://datica.com/academy/hl7-201-the-admission-discharge-transfer-adt-message/" target="_blank">ADT</a> | Admissions, Discharges, Transfers - A01 to A61 Any v2 message version release| 
-|<a href="https://datica.com/academy/hl7-203-the-hl7-orm-order-entry-message/" target="_blank">ORM</a> | Orders |
-|<a href="https://www.lyniate.com/knowledge-hub/hl7-oru-message/" target="_blank">ORU</a> | Results|
-|<a href="https://datica.com/academy/hl7-205-the-hl7-mdm-medical-document-management-message/" target="_blank">MDM</a> | Master Data Management |
-|<a href="http://www.hl7.eu/refactored/dom07.html" target="_blank">MFN</a> | Master File Notifications | 
-|<a href="https://www.lyniate.com/knowledge-hub/hl7-siu-message/" target="_blank">SIU</a> | Schedule | 
-|<a href="https://hl7-definition.caristix.com/v2/HL7v2.3/TriggerEvents/VXU_V04" target="_blank">VXU</a> |Vaccinations | 
+|ADT| Admissions, Discharges, Transfers - A01 to A61 Any v2 message version release| 
+|ORM| Orders |
+|ORU| Results|
+|MDM| Master Data Management |
+|MFN| Master File Notifications | 
+|SIU| Schedule | 
+|VXU|Vaccinations | 
 
 ## FHIR R4
 FHIR, Fast Healthcare Interoperability Resources, is the modern current healthcare industry standardization approach to
