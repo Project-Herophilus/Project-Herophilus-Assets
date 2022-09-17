@@ -10,10 +10,6 @@ the <a href="https://camel.apache.org/" target="_blank">Apache Camel</a> communi
 are thousands of implementations of all sizes, types and scale levels in numerous industries with 
 some of them growing to support 1 billion daily transactions. As part of its growth are the hundred plus connectors that
 it natively supports, this will be very beneficial as connectivity will continue to be extended to more and more platforms.
-## Business Rules, Workflow</td>
-This capability is driven by the upstream <a href="https://www.drools.org/" target="_blank">Drools</a> community. This 
-technology is very largely adopted and implemented throughout numerous industries. Drools has a very large footprint in 
-organizations all over the world delivering expert based solutions and capabilities.
 ## Complex Event Processing</td>
 This capability the upstream <a href="https://www.drools.org/" target="_blank">Drools Fusion</a> community. Since it is
 based on Drools it continues their very large footprint in organizations all over the world delivering 
@@ -23,7 +19,7 @@ This capability is being supported by the upstream <a href="https://kafka.apache
 We are also looking at future implementations with other distributed queuing technologies. While this technology is based on this we
 also are aware of others that have implemented JMS and RabbitMQ based implementations with this footprint as well.
 ## Data                    
-We currently are moving to support DDLs for multiple RDBMS platforms starting with Maria DB (MySQL) and Postgres. This is 
+We currently are moving to support DDLs for multiple RDBMS platforms ; however, this project uses Postgres. This is 
 because there is wide adoption of these within healthcare. The first few implementations with be SQL Server DDL centric as 
 well finalize data model validation. We also intend to expand towards NoSQL standards
 quickly as we continue to implement new features. Connected Health/iDaaS overall objective 
