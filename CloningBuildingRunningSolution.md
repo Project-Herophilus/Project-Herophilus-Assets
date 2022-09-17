@@ -22,7 +22,10 @@ git clone https://github.com/Project-Herophilus/iDaaS-Connect.git
 + You can also go ahead and download the code from a specific repository and then unzip it as well. To download just click on the Code
 button and select the Download Zip option.
 
-## Step 3: Building the App: Command Line
+## Java Assets
+This section is specific to the Java centric assets provided.
+
+### Step 1: Building the App: Command Line
 This section covers how to get the application built.
 + Maven: The following steps are needed to run the code. Either through your favorite IDE or command line
 You can either compile at the base directory or go to the specific iDaaS-Connect acceelerator. Specifically, you want to
@@ -31,26 +34,30 @@ be at the same level as the POM.xml file and execute the following command: <br/
 mvn clean install
 ```
 
-## Step 4: Running the App: Command Line
+### Step 2: Running the App
+There are several ways and manner we can run the application.
+
+### Command Line
 You dont necessarily have to run Step 3 first; however, personnel experience and several contributors have strongly expressed that it is
 just a cleaner way to ensure all the assets are pulled and if anything is needed or issues the mvn clean install should show it.
 
-Here is the command to run the design pattern from the command line: <br/>
+- Here is the command to run the design pattern from the command line: <br/>
 ```
 mvn spring-boot:run
  ```
-Depending upon if you have every run this code before and what libraries you have already in your local Maven instance
-it could take a few minutes.
-+ Code Editor: You can right click on the Application.java in the /src/<application namespace> and select Run
+- Depending upon if you have every run this code before and what libraries you have already in your local Maven instance
+it could take a few minutes. From a code editor you also can right click on the Application.java in the /src/<application namespace> and select Run
 
-# Running the Java JAR
+### Running the Java JAR
 If you don't run the code from an editor or from the maven commands above. You can compile the code through the maven
 commands above to build a jar file. Then, go to the /target directory and run the following command: <br/>
+
 ```
 java -jar <jarfile>.jar 
 ```
 
-## Additional or Advanced Design Pattern/Accelerator Configuration
+### Additional or Advanced Design Pattern/Accelerator Configuration
+ 
 All iDaaS Design Pattern/Accelelrators have application.properties files to enable some level of reusability of code and simplfying configurational enhancements.<br/>
 In order to run multiple iDaaS integration applications we had to ensure the internal http ports that
 the application uses. In order to do this we MUST set the server.port property otherwise it defaults to port 8080 and ANY additional
