@@ -15,7 +15,7 @@ iDaaS Integration is defined by the 3R's that it supports.
 | Run/Revise | Ability to Process/Parsing/Transform| This is one of the most exciting capabilities we are enabling. This is done through our DREAM component(s). DREAM, Data Realtime Management, is all about driving change in the healthcare community and building out a value exchange that can be used by anyone implementing iDaaS to add new capabilities in a low latency and very low risk. You would build a component that has the capability of acting on streaming information and being invoked in a real-time manner. These activities could include areas like event population and building, business rules enablement, third party application integration, AI, ML, dynamic mapping of data sources, cross mapping codes and many other potential examples. |
 | Resolve/Research| Data Insight| Enable error handling and insight to resolve potential processing issues. Also, the need to replay messages for new needs.| 
 
-## Supporting Integration Needs and Capabilities
+## Supporting Overall Integration Needs and Capabilities
 
 | Capability | Capability Area  | Description  |
 |---|---|---|
