@@ -1,8 +1,7 @@
 Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Main GitHub Org. Site</a>
 
 # Detailed Capabilities
-
-While defined [specific design principles](docs/Design/DesignPrinciples.md) are a key aspect to ensure some level of 
+While defined <a href="https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/Platform-Content/Design/DesignPrinciples.md" target="_blank">specific design principles</a> are a key aspect to ensure some level of 
 success criteria for any solution developed. We wanted to ensure that design principles continue to influence the specific
 capabilities we deliver.
 
