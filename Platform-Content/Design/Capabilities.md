@@ -19,7 +19,7 @@ iDaaS Integration is defined by the 3R's that it supports.
 
 | Capability | Capability Area  | Description  |
 |---|---|---|
-|<a href="https://https://github.com/Project-Herophilus/Project-Herophilus-Assets/tree/main/Testing/TestData" target="_blank">Integration General Data </a> | Integration/Data | General data provided from industry sources to help resources test. |
+|<a href="https://github.com/Project-Herophilus/Project-Herophilus-Assets/tree/main/Testing/TestData" target="_blank">Integration General Data </a> | Integration/Data | General data provided from industry sources to help resources test. |
 |<a href="https://github.com/Project-Herophilus/DataSynthesis" target="_blank">Synthetic (Fictitious) Data </a> | Integration/Data | Platform that enables resources to build billions of highly customized data sets based on business needs.  |
 |<a href="https://github.com/Project-Herophilus/Defianz" target="_blank">De-Identification/Anonymization Data</a> | Integration/Data | Capabilities to allow data to be de-identified or anonymized.  |
 |<a href="https://github.com/Project-Herophilus/iDaaS-DataSimulators" target="_blank">Data Simulators</a>| Integration/Data | Components to enable integration testing. |
