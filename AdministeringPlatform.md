@@ -6,11 +6,11 @@ This capability to enable would require a few additional properties to be set.
 
 Below is a generic visual of how this looks (the visual below is specific to iDaaS Connect HL7): <br/>
 
-![iDaaS Platform - Visuals - iDaaS Data Flow - Detailed](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/Platform/Images/iDAAS-Platform/iDaaS-Mgmt-UI.png)
+![iDaaS Platform - Visuals - iDaaS Data Flow - Detailed](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/images/iDaaS-Platform/iDaaS-Mgmt-UI.png)
 
 Every asset has its own defined specific port, we have done this to ensure multiple solutions can be run simultaneously.
 
-## Administrative Interface(s) Specifics
+## Administrative Interface(s): iDaaS-Connect Specifics
 For all the URL links we have made them localhost based, simply change them to the server the solution is running on.
 
 | iDaaS Connect Asset               | Port | Admin URL   | JMX URL|                                                                                   
