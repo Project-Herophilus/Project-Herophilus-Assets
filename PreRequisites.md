@@ -13,7 +13,10 @@ In <kafka>/config/consumer.properties file we will be enhancing the property of 
 system entering the group to read ALL the messages from the start. <br/>
 auto.offset.reset=earliest <br/>
  
-# Java Centric Assets: iDaaS-Connect
+# Java Centric Assets
+This section applies to iDaaS-Connect.
+
+## Specific Needed Assets
 - Java JDK: Java is what everything is developed in. The current supported JDK release(s) are 1.8 and 11. We strongly 
 recommend 11 as all the build actions and activities we do are based on this JDK release.
 <a href="https://developers.redhat.com/products/openjdk/download" target=_blank>OpenJDK Download Site</a>.
