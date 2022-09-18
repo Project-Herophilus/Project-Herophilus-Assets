@@ -12,7 +12,17 @@ changes depending upon your implementation needs. Here are a few we have made to
 In <kafka>/config/consumer.properties file we will be enhancing the property of auto.offset.reset to earliest. This is intended to enable any new
 system entering the group to read ALL the messages from the start. <br/>
 auto.offset.reset=earliest <br/>
- 
+- Something to view Kafka topics with as you are developing and a potential interface for production when and if needed.
+Depending on your Kafka implementation can make this a non-issue; however, we wanted to make you aware of this need
+as being able to see data in every component natively is key for validating and implementing any solution. There are
+several open or inexpensive options to chose from and within the community we have used all of them below with success.
+  - Open Source and Web based: [Provectus](https://github.com/provectus/kafka-ui)
+  - Open Source and Web based: [Kafdrop](https://github.com/obsidiandynamics/kafdrop)
+  - Open Source and Web based: [Kowl](https://github.com/redpanda-data/kowl)
+  - Desktop Based and Paid Product after trial: [Offset Explorer](https://www.kafkatool.com/)
+- An internet connection with active internet connectivity, this is to ensure that if any Maven commands are
+run and any libraries need to be pulled down they can.<br/>
+
 # Java Centric Assets
 This section applies to iDaaS-Connect.
 
@@ -23,8 +33,7 @@ recommend 11 as all the build actions and activities we do are based on this JDK
 - Maven: Some understanding of building, deploying Java artifacts and the commands associated. If using Maven commands then 
 Maven would need to be intalled and runing for the environment you are using. More details about Maven can be 
 found [here](https://maven.apache.org/install.html)<br/>
-- An internet connection with active internet connectivity, this is to ensure that if any Maven commands are
-run and any libraries need to be pulled down they can.<br/>
+
 
  
  
