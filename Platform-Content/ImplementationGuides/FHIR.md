@@ -155,8 +155,8 @@ This section covers the running of the solution. There are several options to st
 ## Step 1: Kafka Server To Connect To
 In order for ANY processing to occur you must have a Kafka server running that this accelerator is configured to connect to.
 Please see the following files we have included to try and help: <br/>
-[Kafka Non Windows](https://github.com/RedHat-Healthcare/iDaaS-Demos/blob/master/Kafka.md)<br/>
-[KafkaWindows](https://github.com/RedHat-Healthcare/iDaaS-Demos/blob/master/KafkaWindows.md)<br/>
+[Kafka Non Windows](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/Kafka.md)<br/>
+[KafkaWindows](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/KafkaWindows.md)<br/>
 
 ## Step 2: FHIR Server Startup
 The platform is all about working with other technologies as needed. If you are workign with an external FHIR server you will
