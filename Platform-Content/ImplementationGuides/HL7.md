@@ -157,19 +157,30 @@ idaas.anonymize=false
 ```
 Below are the following attributes defined. You will notice that these setting don't contain idaas as that is specific to SpringBoot.
 
-| Attribute Name              | Attribute Details                                                                                  |
-|-----------------------------|----------------------------------------------------------------------------------------------------|
-| server.port                 | Used to define what port this assets runs on, sometimes you will also see manangement.port defined |
-| server.max-http-header-size | Number of Bytes the server can process when receiving data                                         |
-| server.address              | 0.0.0.0 means to use all IPs on the machine                                                        |
-| management.address          | 0.0.0.0 means to use all IPs on the machine                                                        |
-| kafkaBrokers               | All the kafka Brokers involved within the integration, if there are several all can be seperated with a comma host:port, host2:port|
-| integrationTopic            | Kafka Topic for processing all auditing and error handing                                          |
-| terminologyTopic            | Kafka Topic for all terminology processing                                                         |
-| cloudTopic                  | Kafka Topic for cloud integration with iDaaS Connect                                               |
-| processPublicCloud          | Setting to determine of PublicCloud will be used (true or flase)                                   |
-| cloudAPI                    | URL to send directly to iDaaS Connect Public Cloud                                                 |
-
+| Attribute Name              | Attribute Details                                                                                                                                    |
+|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| server.port                 | Used to define what port this assets runs on, sometimes you will also see manangement.port defined                                                   |
+| server.max-http-header-size | Number of Bytes the server can process when receiving data                                                                                           |
+| server.address              | 0.0.0.0 means to use all IPs on the machine                                                                                                          |
+| management.address          | 0.0.0.0 means to use all IPs on the machine                                                                                                          |
+| kafkaBrokers                | All the kafka Brokers involved within the integration, if there are several all can be seperated with a comma host:port, host2:port                  |
+| integrationTopic            | Kafka Topic for processing all auditing and error handing                                                                                            |
+| terminologyTopic            | Kafka Topic for all terminology processing                                                                                                           |
+| cloudTopic                  | Kafka Topic for cloud integration with iDaaS Connect                                                                                                 |
+| processPublicCloud          | Setting to determine of PublicCloud will be used (true or flase)                                                                                     |
+| cloudAPI                    | URL to send directly to iDaaS Connect Public Cloud                                                                                                   |
+| fhirConversionTopic         | The Kafka Topic where FHIR conversion data lands                                                                                                     |
+| hl7(msg)_Directory          | A defined directory where HL7 v2 message files can be processed from. These attributes are repeated by (msg) - ADT, ORM,ORU,MDM,MFN,RDE,SCH, and VXU |
+| (msg)Port                   | The defined server port for the specific (msg). These attributes are repeated by (msg) - ADT, ORM,ORU,MDM,MFN,RDE,SCH, and VXU                       |                                                                                                     
+| (msg)ACKResponse            | The processing of ACKs from the sending systems. These attributes are repeated by (msg) - ADT, ORM,ORU,MDM,MFN,RDE,SCH, and VXU                      |
+| (msg)TopicName              | These attributes are repeated by (msg) - ADT, ORM,ORU,MDM,MFN,RDE,SCH, and VXU                                                                       |
+| hl7ccda_Directory           | Directory to process HL7 CCDA directories from                                                                                                       |
+| ccdaTopicName               | The Kafka Topic where CCDA inbound data to the platform lands                                                                                        |
+| hl7OverHTTPTopicName        | The Kafka Topic where HL7 data sent over HTTP lands                                                                                                  |
+| convertCCDAToFHIR           | Setting used to evaluate if CCDA transactions will be converted to FHR automatically                                                                 |
+| convertHL7toFHIR            | Setting used to evaluate if HL7 transactions will be converted to FHIR automatically                                                                 |
+| deidentify                  | Future setting: for enabling deidentification to occur                                                                                               |
+| anonymize                   | Future setting: for enabling anonymization to occur                                                                                                  |
 
 ## Command Line Argument Passing
 Alternatively, want to have a few unique ways to do this. This will overrise one specific property via a command line:
@@ -209,20 +220,24 @@ mvn spring-boot:run
  ```
 
 # Testing
+The following are ways to test HL7.
+
+## HL7
+To test these components you will need an HL7 client. There are many avaiable; or you could use the 
+[HL7 Data Simulator](https://github.com/Project-Herophilus/iDaaS-DataSimulators/tree/main/HL7) provide by the Herophilus community.
+It has a set of capabilities that will continue to expand.
+
+## HL7 and CCDA over HTTP
 We have a full set of testing that you can do using our Postman collection, please go
 [here](https://www.postman.com/winter-robot-787282/workspace/intelligent-daas/collection/16526170-fb4cdfdd-9a65-4f04-9e32-b807921c1b5e?action=share&creator=16526170)
 to access it. Since this collection deals with several assets the specific assets are located in the
-->/Connect/FHIR folder.
+->/Connect/HL7 folder.
 
 To properly use the Postman Collection there are a couple things to understand:
 1. There are varibles used to make the usage of the collection easier. If you open up SendFHIRResourceInbound to the right
-   of it you will see what looks like an eye. Depending upon your implementattion, hostnames and ports for iDaaS components
+   of it you will see what looks like an eye. Depending upon your implementation, hostnames and ports for iDaaS components
    you can set these as needed. This eliminates the need to reset them manually.
-2. All the iDaaS-Connect-FHIR assets can be used with this one URL. You simply need to set the appropriate FHIR resource
-   name you are sending into iDaaS-Connect-FHIR with the header property named resourcename. The specific FHIR resource must
-   be defined in ALL lower case.
-
-
+2. All the iDaaS-Connect-HL7 assets can be used with this one URL. 
 
 If you would like to contribute feel free to, contributions are always welcome!!!!
 
