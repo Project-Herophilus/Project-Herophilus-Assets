@@ -11,5 +11,5 @@ kafkaDir=$HOME'/OpenSourceTech/kafka_2.13-2.6.0'
 echo "Directory: "$kafkaDir
 cd $kafkaDir
 
-bin/zookeeper-server-start.sh config/zookeeper.properties > /dev/null 2>&1 &
-bin/kafka-server-start.sh config/server.properties > /dev/null 2>&1 &
+bin/zookeeper-server-start.sh config/zookeeper.properties &
+bin/kafka-server-start.sh config/server.properties &
