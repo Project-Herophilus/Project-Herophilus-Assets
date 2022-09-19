@@ -16,7 +16,7 @@ For all iDaaS design patterns it should be assumed that you will either install 
 ## Cloning, Building and Running Solutions
 Here is a consistent manner in the way you can clone, build and run this [component](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/CloningBuildingRunningSolution.md).
 
-# Implementation Centric Implementation Details
+# Implementation Centric Details
 The following are specific for this implementation.
 
 ## Cloning or Downloading the Code Repository

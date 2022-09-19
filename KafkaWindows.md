@@ -42,6 +42,9 @@ You will just need to change these if you want to use them and don't unzip
 files into these locations.
 
 ## Startup Kafka
+You can download the scripts as a starting point from https://github.com/Project-Herophilus/Project-Herophilus-Assets/tree/main/Platform-Assets/Scripts/kafka/windows.
+You will need to change the directory reference to match your configuration.<br/>
+
 1.  The first script to run is named 1-start_kafka_zookeeper_windows.bat, it is ONLY
 used to start zookeeper.
 2.  The second script to run is named 2-start_kafka_server_windows.bat, it will start all the server
@@ -49,5 +52,11 @@ based components so ANY code and potential third party applications can
 connect to specific Kafka Topics.
 
 ## Validating Kafka is Running
-Use any third party tool. We leverage [Kafka Tools](https://kafkatool.com/), it is a very nice desktop tools for
-simply connect to Kafka and see the topics, and the ALL the data within them.
+You can use any one of numerous tools to view Kafka topics with as you are developing and a potential interface for production when and if needed.
+Depending on your Kafka implementation can make this a non-issue; however, we wanted to make you aware of this need
+as being able to see data in every component natively is key for validating and implementing any solution. There are
+several open or inexpensive options to chose from and within the community we have used all of them below with success.
+- Open Source and Web based: [Provectus](https://github.com/provectus/kafka-ui)
+- Open Source and Web based: [Kafdrop](https://github.com/obsidiandynamics/kafdrop)
+- Open Source and Web based: [Kowl](https://github.com/redpanda-data/kowl)
+- Desktop Based and Paid Product after trial: [Offset Explorer](https://www.kafkatool.com/)

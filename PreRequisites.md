@@ -5,8 +5,8 @@ For all iDaaS design patterns it should be assumed that you will either install 
 # General
 - An existing Kafka (or some flavor of it) up and running. We have implemented iDaaS with numerous Kafka implementations. 
 Please see the following files we have included to try and help: <br/>
-[Kafka Non Windows](https://github.com/RedHat-Healthcare/iDaaS-Demos/blob/master/Kafka.md) <br/>
-[Kafka Windows](https://github.com/RedHat-Healthcare/iDaaS-Demos/blob/master/KafkaWindows.md) <br/>
+[Kafka Non Windows](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/Kafka.md) <br/>
+[Kafka Windows](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/KafkaWindows.md) <br/>
 No matter the platform chosen it is important to know that the Kafka out of the box implementation might require some 
 changes depending upon your implementation needs. Here are a few we have made to ensure: <br/>
 In <kafka>/config/consumer.properties file we will be enhancing the property of auto.offset.reset to earliest. This is intended to enable any new
