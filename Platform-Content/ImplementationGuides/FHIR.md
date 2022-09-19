@@ -88,34 +88,54 @@ management.endpoint.jolokia.enabled=true
 # Must be unique and defined otherwise defaults to 8080
 # used for any Fuse SpringBoot developed assets
 server.port=9981
+server.max-http-header-size=200000
+## Management App Server Address
+server.address=0.0.0.0
+management.address=0.0.0.0
+## Kafka
+# Physical/Virtual
 idaas.kafkaBrokers=localhost:9092
-idaas.processToFHIR=true
+idaas.integrationTopic=opsmgmt_platformtransactions
+idaas.terminologyTopic=idaas_terminologies
+# Public Cloud
+idaas.cloudTopic=idaas_cloud
+idaas.processPublicCloud=false
+idaas.cloudAPI=urlendpoint
 # fhirVendor can be ibm hapi or microsoft
 idaas.fhirVendor=hapi
-idaas.ibmFhirServer=http://localhost:8090/fhir-server/api/v4/
-idass.hapiFhirServer=http://localhost:8888/fhir-server/api/v4/
-idaas.microsoftFhirServer=http://localhost:9999/fhir/api/v4/
+idaas.ibmURI=localhost:8090/fhir-server/api/v4/
+# HAPI FHIR prior to 5.x server release
+idaas.hapiURI=localhost:8888/hapi-fhir-jpaserver/fhir/
+# HAPI FHIR Server post 5.x
+#idaas.hapiURI=localhost:8888/fhir/
+#idaas.hapiURI=http://localhost:9981/idaas/
+idaas.msoftURI=localhost:0809/microsoftapi/api/v4/
+# FHIR Specific
+idaas.processToFHIR=true
+idaas.processTerminologies=true
+idaas.processBundles=false
 ```
+Below are the following attributes defined.
 
-As you look at the properties the idaas.fhirVendor on startup determines the FHIR Server that would be
-leveraged:<br/>
-idaas.fhirVendor=ibm<br/>
-idaas.fhirVendor=hapi<br/>
-idaas.fhirVendor=microsoft<br/>
+| Attribute Name              | Attribute Details                                                                                  |
+|-----------------------------|----------------------------------------------------------------------------------------------------|
+| server.port                 | Used to define what port this assets runs on, sometimes you will also see manangement.port defined |
+| server.max-http-header-size | Number of Bytes the server can process when receiving data                                         |
+| server.address              | 0.0.0.0 means to use all IPs on the machine                                                        |
+| management.address          | 0.0.0.0 means to use all IPs on the machine                                                        |
+| integrationTopic            | Kafka Topic for processing all auditing and error handing                                          |
+| terminologyTopic            | Kafka Topic for all terminology processing                                                         |
+| cloudTopic                  | Kafka Topic for cloud integration with iDaaS Connect                                               |
+| processPublicCloud          | Setting to determine of PublicCloud will be used (true or flase)                                   |
+| cloudAPI                    | URL to send directly to iDaaS Connect Public Cloud                                                 |
+| fhirVendor                  | FHIR vendor to be used - ibm hapi or microsoft                                                     |
+| hapiURI                     | HAPI/SmileCDR processing endpoint                                                                  |
+| ibmURI                      | IBM FHIR Server processing endpoint                                                                |
+| msoftURI                    | Microsoft FHIR Server processing endpoint                                                          |
+| processtoFHIR               | Do you want to process to an external FHIR server (true or false)                                  |
+| processTerminologies        | Do you process terminologies                                                                       |
+| processBundles              | Do you want to process FHIR bundles|                                                                |
 
-Additionally, this design pattern has been tested with multiple FHIR Servers and has been tested with multiple FHIR servers.<br/>
-<b>How would I connect to iDAAS-Connect-FHIR to post data to it?</b><br/>
-<i>Every FHIR supported resource is in lower case.</i> This example is based on the default
-configuration of iDAAS with no advanced configuration or HTTPS endpoints being enabled. For example,
-if the iDAAS-Connect-FHIR is running on localhost and you are trying to work with a FHIR Condition resource then
-the URL would be http://localhost:9081/.
-
-1. We use Insomnia Core, a well know API testing tool, to connect to the spec
-2. ific FHIR resource endpoint within the
-   running instance of iDAAS-Connect-FHIR.
-2. iDAAS-Connect-FHIR audits the inbound data.
-3. iDAAS-Connect-FHIR then processes the data to/from the configured FHIR server
-4. iDAAS-Connect-FHIR then processes the FHIR server response and audits it as well.
 
 ## Command Line Argument Passing
 Alternatively, want to have a few unique ways to do this. This will overrise one specific property via a command line:
