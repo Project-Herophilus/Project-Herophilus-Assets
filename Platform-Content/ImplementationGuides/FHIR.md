@@ -139,11 +139,11 @@ Below are the following attributes defined. You will notice that these setting d
 
 
 ## Command Line Argument Passing
-Alternatively, want to have a few unique ways to do this. This will overrise one specific property via a command line:
+Alternatively, want to have a few unique ways to do this. This will override one specific property via a command line:
 ```
 java -jar <jarfile>.jar --server.port=8888
 ```
-to run a seperate specific application.properties file. In the example beloe the file is is in the config diretory
+to run a seperate specific application.properties file. In the example below the file is in the config diretory
 one level above where the jar is located, you can implement that through the following
 command:
 ```
@@ -160,7 +160,7 @@ Please see the following files we have included to try and help: <br/>
 [KafkaWindows](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/KafkaWindows.md)<br/>
 
 ## Step 2: FHIR Server Startup
-The platform is all about working with other technologies as needed. If you are workign with an external FHIR server you will
+The platform is all about working with other technologies as needed. If you are working with an external FHIR server you will
 need to ensure it is started and you have the base URL for all API endpoints it presents for processing. The URL is critical in 
 helping iDaaS FHIR route data properly. 
 

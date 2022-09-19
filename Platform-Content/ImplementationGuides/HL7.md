@@ -5,7 +5,7 @@ This implementation guide with specific deal with HL7v2x messages.
 
 ## Integration Data Flow Steps
 This data flow is a sample flow based on real world usage and needs. When the iDAAS-Connect-HL7 starts it
-creates a series of HL7 MLLP Server ports, a specific set of directories, and some servlet endpoints.  All of thesec
+creates a series of HL7 MLLP Server ports, a specific set of directories, and some servlet endpoints.  All of these
 endpoints are in place to enable processing of HL7 v2x messages, and CCDA documents.
 
 ![Data Flow](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/images/iDaaS-Platform/DataFlow-HL7.png)
@@ -15,7 +15,8 @@ For all iDaaS design patterns it should be assumed that you will either install 
 [following](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/PreRequisites.md).
 
 ## Cloning, Building and Running Solutions
-Here is a consistent manner in the way you can clone, build and run this [component](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/CloningBuildingRunningSolution.md).
+Here is a consistent manner in the way you can clone, build and run this 
+[component](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/CloningBuildingRunningSolution.md).
 
 # Implementation Centric Details
 The following are specific for this implementation.
@@ -47,12 +48,11 @@ now execute the following command: <br/>
 ```
 mvn clean install
 ```
-
 ### Step 2: Running the App
 There are several ways and manner we can run the application.
 
 ### Command Line
-You dont necessarily have to run Step 3 first; however, personnel experience and several contributors have strongly expressed that it is
+You don't necessarily have to run Step 3 first; however, personnel experience and several contributors have strongly expressed that it is
 just a cleaner way to ensure all the assets are pulled and if anything is needed or issues the mvn clean install should show it.
 
 - Here is the command to run the design pattern from the command line: <br/>
@@ -75,7 +75,6 @@ Now, if you want to make changes to the specific properties for your implementat
 iDaaS-Connect-HL7/src/resource/application.properties file.
 
 Supported properties include:
-
 ```
 management.endpoints.web.exposure.include=hawtio, jolokia,info, health, prometheus
 hawtio.authenticationEnabled=false
@@ -183,11 +182,11 @@ Below are the following attributes defined. You will notice that these setting d
 | anonymize                   | Future setting: for enabling anonymization to occur                                                                                                  |
 
 ## Command Line Argument Passing
-Alternatively, want to have a few unique ways to do this. This will overrise one specific property via a command line:
+Alternatively, want to have a few unique ways to do this. This will override one specific property via a command line:
 ```
 java -jar <jarfile>.jar --server.port=8888
 ```
-to run a seperate specific application.properties file. In the example beloe the file is is in the config diretory
+to run a seperate specific application.properties file. In the example beloe the file is in the config directory
 one level above where the jar is located, you can implement that through the following
 command:
 ```

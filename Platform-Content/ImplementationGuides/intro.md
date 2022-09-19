@@ -14,6 +14,7 @@ OS you choose to run this on.
 | [BlueButton](BlueButton.md)    |
 | [FHIR](FHIR.md)                |
 | [HL7](HL7.md)                  |
+| [Public Cloud](PublicCloud.md) |
 
 More of these will be coming as we work to ensure the content is consistent and accurate.
 
