@@ -115,7 +115,7 @@ idaas.processToFHIR=true
 idaas.processTerminologies=true
 idaas.processBundles=false
 ```
-Below are the following attributes defined.
+Below are the following attributes defined. You will notice that these setting don't contain idaas as that is specific to SpringBoot.
 
 | Attribute Name              | Attribute Details                                                                                  |
 |-----------------------------|----------------------------------------------------------------------------------------------------|
@@ -123,7 +123,7 @@ Below are the following attributes defined.
 | server.max-http-header-size | Number of Bytes the server can process when receiving data                                         |
 | server.address              | 0.0.0.0 means to use all IPs on the machine                                                        |
 | management.address          | 0.0.0.0 means to use all IPs on the machine                                                        |
-| kafkaBrokers.               | All the kafka Brokers involved within the integration, if there are several all can be seperated with a comma host:port, host2:port|
+| kafkaBrokers               | All the kafka Brokers involved within the integration, if there are several all can be seperated with a comma host:port, host2:port|
 | integrationTopic            | Kafka Topic for processing all auditing and error handing                                          |
 | terminologyTopic            | Kafka Topic for all terminology processing                                                         |
 | cloudTopic                  | Kafka Topic for cloud integration with iDaaS Connect                                               |
