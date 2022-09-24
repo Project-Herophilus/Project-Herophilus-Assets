@@ -14,6 +14,12 @@ For all iDaaS design patterns it should be assumed that you will either install 
 [following](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/PreRequisites.md).
 
 ## Cloning, Building and Running Solutions
+
+*You can go to https://github.com/orgs/Project-Herophilus/repositories to see all the specific respository
+names and find the specific respository you will want to work with. To get the specific URL just select the repository
+and then click on the Code dropdown and you will be able to select/copy the specific URL where the
+code exists.*
+
 Here is a consistent manner in the way you can clone, build and run this [component](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/CloningBuildingRunningSolution.md).
 
 # Implementation Centric Details
