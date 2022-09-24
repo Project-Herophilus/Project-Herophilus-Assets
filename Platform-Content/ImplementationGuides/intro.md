@@ -1,6 +1,6 @@
 Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Main GitHub Org. Site</a>
 
-![iDaaS Word Art](../../images/iDAAS-Web-WordCloud.png)
+[iDaaS Word Art](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/images/iDaaS-Platform/iDAAS-Web-WordCloud.png)
 
 # iDaaS Implementation Guides
 Below are common links to help you navigate all the specific implementation guides.
