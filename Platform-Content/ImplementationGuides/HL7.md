@@ -172,7 +172,7 @@ Below are the following attributes defined. You will notice that these setting d
 | integrationTopic            | Kafka Topic for processing all auditing and error handing                                                                                            |
 | terminologyTopic            | Kafka Topic for all terminology processing                                                                                                           |
 | cloudTopic                  | Kafka Topic for cloud integration with iDaaS Connect                                                                                                 |
-| processPublicCloud          | Setting to determine of PublicCloud will be used (true or flase)                                                                                     |
+| processPublicCloud          | Setting to determine of PublicCloud will be used (true or false)                                                                                     |
 | cloudAPI                    | URL to send directly to iDaaS Connect Public Cloud                                                                                                   |
 | fhirConversionTopic         | The Kafka Topic where FHIR conversion data lands                                                                                                     |
 | hl7(msg)_Directory          | A defined directory where HL7 v2 message files can be processed from. These attributes are repeated by (msg) - ADT, ORM,ORU,MDM,MFN,RDE,SCH, and VXU |

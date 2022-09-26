@@ -9,16 +9,16 @@ All communications we receive influences our [Technical Roadmap](../Roadmap/inde
 Here is a link to the basic [End User Setup](../Technical/EndUserSetup.md) that you should make sure you have setup for whatever
 OS you choose to run this on.
 
-## Specific iDaaS Core Platform Implementation Guides - General
+## Specific Core Platform Implementation Guides - General
 As part of the core platform there are some components that provide a specific benefit to any of the iDaaS or Core
 community assets. These items can be found here.
 
-| Specific Implementation Guides                                  |
-|-----------------------------------------------------------------|
-| [iDaaS KIC](Knowledge, Insight and Conformance)](iDaaS-KIC.md) |
-| [Public Cloud](PublicCloud.md)                                  |
+| Specific Implementation Guides                                 |
+|----------------------------------------------------------------|
+| [iDaaS KIC(Knowledge, Insight and Conformance)](iDaaS-KIC.md) |
+| [Public Cloud](PublicCloud.md)                                 |
 
-## Core Community Implementation Guides
+## Additional Community Implementation Guides
 
 | Specific Implementation Guides     |
 |------------------------------------|
@@ -31,12 +31,6 @@ community assets. These items can be found here.
 | [BlueButton](BlueButton.md)    |
 | [FHIR](FHIR.md)                |
 | [HL7](HL7.md)                  |
-
-
-
-
-
-
 
 More of these will be coming as we work to ensure the content is consistent and accurate.
 

@@ -12,6 +12,15 @@ For all iDaaS design patterns it should be assumed that you will either install 
 [following](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/PreRequisites.md).
 This platform also includes a very basic Grafana dashboard.
 
+## Additional Pre-Requisites
+For this platform their is a RDBMS potential requirement. The current tested database is PostgresQL v 9.6 or greater. 
+We have included the DDLs within the repository 
+[at](https://github.com/Project-Herophilus/iDaaS-KIC/tree/main/iDaaS-KIC-Integration/DataTier), these will
+need to be implemented prior to trying to run this platform.
+
+*If you want to use another RDBMS you can tweak all your settings and when it works submit a Pull Request so we can add it
+to our platform*
+
 ## Cloning, Building and Running Solutions
 Here is a consistent manner in the way you can clone, build and run this [component](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/CloningBuildingRunningSolution.md).
 
@@ -119,31 +128,30 @@ the Grafana Dashboard or anything related to the seeing data in other than a JSO
 
 Below are the following attributes defined. You will notice that these setting don't contain idaas as that is specific to SpringBoot.
 
-| Attribute Name                 | Attribute Details                                                                                                                                    |
-|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| server.port                    | Used to define what port this assets runs on, sometimes you will also see manangement.port defined                                                   |
-| server.max-http-header-size    | Number of Bytes the server can process when receiving data                                                                                           |
-| server.address                 | 0.0.0.0 means to use all IPs on the machine                                                                                                          |
-| management.address             | 0.0.0.0 means to use all IPs on the machine                                                                                                          |
-| kafkaBrokers                   | All the kafka Brokers involved within the integration, if there are several all can be seperated with a comma host:port, host2:port                  |
-| integrationTopic               | Kafka Topic for processing all auditing and error handing - specific to native iDaaS-Connect assets                                                  |
-| appintegrationTopic | Kafka Topic for all third party application integration processing                                                                                   |
-
-| cloudTopic                     | Kafka Topic for cloud integration with iDaaS Connect                                                                                                 |
-| processPublicCloud             | Setting to determine of PublicCloud will be used (true or flase)                                                                                     |
-| cloudAPI                       | URL to send directly to iDaaS Connect Public Cloud                                                                                                   |
-| fhirConversionTopic            | The Kafka Topic where FHIR conversion data lands                                                                                                     |
-| hl7(msg)_Directory             | A defined directory where HL7 v2 message files can be processed from. These attributes are repeated by (msg) - ADT, ORM,ORU,MDM,MFN,RDE,SCH, and VXU |
-| (msg)Port                      | The defined server port for the specific (msg). These attributes are repeated by (msg) - ADT, ORM,ORU,MDM,MFN,RDE,SCH, and VXU                       |                                                                                                     
-| (msg)ACKResponse               | The processing of ACKs from the sending systems. These attributes are repeated by (msg) - ADT, ORM,ORU,MDM,MFN,RDE,SCH, and VXU                      |
-| (msg)TopicName                 | These attributes are repeated by (msg) - ADT, ORM,ORU,MDM,MFN,RDE,SCH, and VXU                                                                       |
-| hl7ccda_Directory              | Directory to process HL7 CCDA directories from                                                                                                       |
-| ccdaTopicName                  | The Kafka Topic where CCDA inbound data to the platform lands                                                                                        |
-| hl7OverHTTPTopicName           | The Kafka Topic where HL7 data sent over HTTP lands                                                                                                  |
-| convertCCDAToFHIR              | Setting used to evaluate if CCDA transactions will be converted to FHR automatically                                                                 |
-| convertHL7toFHIR               | Setting used to evaluate if HL7 transactions will be converted to FHIR automatically                                                                 |
-| deidentify                     | Future setting: for enabling deidentification to occur                                                                                               |
-| anonymize                      | Future setting: for enabling anonymization to occur                                                                                                  |
+| Attribute Name                        | Attribute Details                                                                                                                   |
+|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| server.port                           | Used to define what port this assets runs on, sometimes you will also see manangement.port defined                                  |
+| server.max-http-header-size           | Number of Bytes the server can process when receiving data                                                                          |
+| server.address                        | 0.0.0.0 means to use all IPs on the machine                                                                                         |
+| management.address                    | 0.0.0.0 means to use all IPs on the machine                                                                                         |
+| kafkaBrokers                          | All the kafka Brokers involved within the integration, if there are several all can be seperated with a comma host:port, host2:port |
+| integrationTopic                      | Kafka Topic for processing all auditing and error handing - specific to native iDaaS-Connect assets                                 |
+| appintegrationTopic                   | Kafka Topic for all third party application integration processing                                                                  |
+| storeInFs_DataIntegrationAudit        | Setting for Storing ALL specific data integration KIC transactions on a filesystem - true or false                                  |
+| auditDir_DataIntegrationAuditLocation | Location of the Filesystem Dir                                                                                                      |
+| storeInFs_AppIntegrationAudit         | Setting for Storing ALL specific data integration KIC transactions on a filesystem - true or false                                  |
+| auditDir_AppIntegrationAuditLocation  | Setting for Storing ALL specific app integration KIC transactions on a filesystem                                                   |
+| createDbTable                         | Setting to determine if table structures would be created - false (please just keep the setting)                                    |
+| storeInDb                             | Setting to determine if data will be stored in table - true or false                                                                |
+| storeInDb_DataIntegrationAudit        | Setting to determine if data integration data will be stored in table - true or false                                               |
+| storeInDb_AppIntegrationAudit         | Setting to determine if app integration data will be stored in table - true or false                                                |
+| isCreateDbTable                       | Setting to determine if table structures would be created - false (please just keep the setting)                                    |
+| dbIntegrationTableName                | Specific table where data integration data ends up. The default is intgrtn_insight                                                  |
+| dbAppIntegrationTableName             | Specific table where app integration data ends up. The default is appintgrtn_insight                                                |
+| dbDriverClassName                     | Driver classname to use the default is - org.postgresql.Driver                                                                      |
+| dbUrl                                 | Database URL - jdbc:postgresql://localhost:5432/idaas_kic                                                                           |
+| dbPassword                            | Database specific usernames's password                                                                                              |                                                                                                                   |
+| dbUsername                            | Database username                                                                                                                   |
 
 ## Command Line Argument Passing
 Alternatively, want to have a few unique ways to do this. This will override one specific property via a command line:
