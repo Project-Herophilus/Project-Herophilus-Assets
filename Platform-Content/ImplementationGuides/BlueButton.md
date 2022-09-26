@@ -123,7 +123,7 @@ Below are the following attributes defined. You will notice that these setting d
 | integrationTopic             | Kafka Topic for processing all auditing and error handing                                                                           |
 | terminologyTopic             | Kafka Topic for all terminology processing                                                                                          |
 | cloudTopic                   | Kafka Topic for cloud integration with iDaaS Connect                                                                                |
-| processPublicCloud           | Setting to determine of PublicCloud will be used (true or flase)                                                                    |
+| processPublicCloud           | Setting to determine of PublicCloud will be used (true or false)                                                                    |
 | cloudAPI                     | URL to send directly to iDaaS Connect Public Cloud                                                                                  |
 | bluebuttonclientid           | Assigned Client ID when you register with CMS                                                                                       |
 | bluebuttonclientsecret       | Created client secret from CMS                                                                                                      |

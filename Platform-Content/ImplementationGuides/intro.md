@@ -18,12 +18,6 @@ community assets. These items can be found here.
 | [iDaaS KIC(Knowledge, Insight and Conformance)](iDaaS-KIC.md) |
 | [Public Cloud](PublicCloud.md)                                 |
 
-## Additional Community Implementation Guides
-
-| Specific Implementation Guides     |
-|------------------------------------|
-| [Synthetic Data](DataSynthesis.md) |
-
 ## Specific iDaaS Capabilities
 
 | Specific Implementation Guides |
@@ -31,6 +25,16 @@ community assets. These items can be found here.
 | [BlueButton](BlueButton.md)    |
 | [FHIR](FHIR.md)                |
 | [HL7](HL7.md)                  |
+
+## Additional Community Implementation Guides
+These are maturing and under development
+
+| Specific Implementation Guides        |
+|---------------------------------------|
+| [Synthetic Data](DataSynthesis.md)    |
+| [DataSimulator-HL7](DataSim-HL7.md)   |
+| [DataSimulator-FHIR](DataSim-FHIR.md) |
+
 
 More of these will be coming as we work to ensure the content is consistent and accurate.
 
