@@ -14,6 +14,12 @@ For all iDaaS design patterns it should be assumed that you will either install 
 [following](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/PreRequisites.md).
 
 ## Cloning, Building and Running Solutions
+
+*You can go to https://github.com/orgs/Project-Herophilus/repositories to see all the specific respository
+names and find the specific respository you will want to work with. To get the specific URL just select the repository
+and then click on the Code dropdown and you will be able to select/copy the specific URL where the
+code exists.*
+
 Here is a consistent manner in the way you can clone, build and run this [component](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/CloningBuildingRunningSolution.md).
 
 # Implementation Centric Details
@@ -117,25 +123,25 @@ idaas.processBundles=false
 ```
 Below are the following attributes defined. You will notice that these setting don't contain idaas as that is specific to SpringBoot.
 
-| Attribute Name              | Attribute Details                                                                                  |
-|-----------------------------|----------------------------------------------------------------------------------------------------|
-| server.port                 | Used to define what port this assets runs on, sometimes you will also see manangement.port defined |
-| server.max-http-header-size | Number of Bytes the server can process when receiving data                                         |
-| server.address              | 0.0.0.0 means to use all IPs on the machine                                                        |
-| management.address          | 0.0.0.0 means to use all IPs on the machine                                                        |
-| kafkaBrokers               | All the kafka Brokers involved within the integration, if there are several all can be seperated with a comma host:port, host2:port|
-| integrationTopic            | Kafka Topic for processing all auditing and error handing                                          |
-| terminologyTopic            | Kafka Topic for all terminology processing                                                         |
-| cloudTopic                  | Kafka Topic for cloud integration with iDaaS Connect                                               |
-| processPublicCloud          | Setting to determine of PublicCloud will be used (true or flase)                                   |
-| cloudAPI                    | URL to send directly to iDaaS Connect Public Cloud                                                 |
-| fhirVendor                  | FHIR vendor to be used - ibm hapi or microsoft                                                     |
-| hapiURI                     | HAPI/SmileCDR processing endpoint                                                                  |
-| ibmURI                      | IBM FHIR Server processing endpoint                                                                |
-| msoftURI                    | Microsoft FHIR Server processing endpoint                                                          |
-| processtoFHIR               | Do you want to process to an external FHIR server (true or false)                                  |
-| processTerminologies        | Do you process terminologies                                                                       |
-| processBundles              | Do you want to process FHIR bundles|                                                                |
+| Attribute Name              | Attribute Details                                                                                                                   |
+|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| server.port                 | Used to define what port this assets runs on, sometimes you will also see manangement.port defined                                  |
+| server.max-http-header-size | Number of Bytes the server can process when receiving data                                                                          |
+| server.address              | 0.0.0.0 means to use all IPs on the machine                                                                                         |
+| management.address          | 0.0.0.0 means to use all IPs on the machine                                                                                         |
+| kafkaBrokers               | All the kafka Brokers involved within the integration, if there are several all can be seperated with a comma host:port, host2:port |
+| integrationTopic            | Kafka Topic for processing all auditing and error handing                                                                           |
+| terminologyTopic            | Kafka Topic for all terminology processing                                                                                          |
+| cloudTopic                  | Kafka Topic for cloud integration with iDaaS Connect                                                                                |
+| processPublicCloud          | Setting to determine of PublicCloud will be used (true or false)                                                                    |
+| cloudAPI                    | URL to send directly to iDaaS Connect Public Cloud                                                                                  |
+| fhirVendor                  | FHIR vendor to be used - ibm hapi or microsoft                                                                                      |
+| hapiURI                     | HAPI/SmileCDR processing endpoint                                                                                                   |
+| ibmURI                      | IBM FHIR Server processing endpoint                                                                                                 |
+| msoftURI                    | Microsoft FHIR Server processing endpoint                                                                                           |
+| processtoFHIR               | Do you want to process to an external FHIR server (true or false)                                                                   |
+| processTerminologies        | Do you process terminologies                                                                                                        |
+| processBundles              | Do you want to process FHIR bundles                                                                                                 |                                                                |
 
 
 ## Command Line Argument Passing

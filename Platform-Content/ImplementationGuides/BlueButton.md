@@ -17,6 +17,12 @@ The following are specific for this implementation.
 
 ## Cloning or Downloading the Code Repository
 This section covers how to get the application cloned and downloaded.
+
+*You can go to https://github.com/orgs/Project-Herophilus/repositories to see all the specific respository
+names and find the specific respository you will want to work with. To get the specific URL just select the repository
+and then click on the Code dropdown and you will be able to select/copy the specific URL where the
+code exists.*
+
 + Maven: The following steps are needed to run the code. Either through your favorite IDE or command line. The following command will
   clone the iDaaS-Connect repository and all it's submodules:
 ```
@@ -117,7 +123,7 @@ Below are the following attributes defined. You will notice that these setting d
 | integrationTopic             | Kafka Topic for processing all auditing and error handing                                                                           |
 | terminologyTopic             | Kafka Topic for all terminology processing                                                                                          |
 | cloudTopic                   | Kafka Topic for cloud integration with iDaaS Connect                                                                                |
-| processPublicCloud           | Setting to determine of PublicCloud will be used (true or flase)                                                                    |
+| processPublicCloud           | Setting to determine of PublicCloud will be used (true or false)                                                                    |
 | cloudAPI                     | URL to send directly to iDaaS Connect Public Cloud                                                                                  |
 | bluebuttonclientid           | Assigned Client ID when you register with CMS                                                                                       |
 | bluebuttonclientsecret       | Created client secret from CMS                                                                                                      |
