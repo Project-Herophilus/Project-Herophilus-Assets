@@ -1,6 +1,6 @@
 Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Main GitHub Org. Site</a>
 
-[iDaaS Word Art](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/images/iDaaS-Platform/iDAAS-Web-WordCloud.png)
+[//]: # ([iDaaS Word Art]&#40;https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/images/iDaaS-Platform/iDAAS-Web-WordCloud.png&#41;)
 
 # iDaaS Implementation Guides
 Below are common links to help you navigate all the specific implementation guides.
@@ -15,14 +15,14 @@ community assets. These items can be found here.
 
 | Specific Implementation Guides                                  |
 |-----------------------------------------------------------------|
-| [iDaaS KIC] (Knowledge, Insight and Conformance)](iDaaS-KIC.md) |
+| [iDaaS KIC](Knowledge, Insight and Conformance)](iDaaS-KIC.md) |
 | [Public Cloud](PublicCloud.md)                                  |
 
 ## Core Community Implementation Guides
 
-| Specific Implementation Guides      |
-|-------------------------------------|
-| [Synthetic Data)](DataSynthesis.md) |
+| Specific Implementation Guides     |
+|------------------------------------|
+| [Synthetic Data](DataSynthesis.md) |
 
 ## Specific iDaaS Capabilities
 

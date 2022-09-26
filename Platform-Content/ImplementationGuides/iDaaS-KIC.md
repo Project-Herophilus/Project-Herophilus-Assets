@@ -5,7 +5,7 @@ Return to the <a href="https://project-herophilus.github.io/Project-Herophilus-A
 ## Data Flow Steps
 This data flow of how iDaaS KIC.
 
-![Data Flow](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/images/iDaaS-Platform/DataFlow-iDaaS-KIC.png)
+![Data Flow](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/enhancement/implementation-guides/images/iDaaS-Platform/DataFlow-iDaaS-KIC.png)
 
 # Platform General Pre-Requisites
 For all iDaaS design patterns it should be assumed that you will either install as part of this effort or need the
