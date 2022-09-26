@@ -10,6 +10,7 @@ This data flow of how iDaaS KIC.
 # Platform General Pre-Requisites
 For all iDaaS design patterns it should be assumed that you will either install as part of this effort or need the
 [following](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/PreRequisites.md).
+This platform also includes a very basic Grafana dashboard.
 
 ## Cloning, Building and Running Solutions
 Here is a consistent manner in the way you can clone, build and run this [component](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/CloningBuildingRunningSolution.md).
@@ -78,3 +79,109 @@ Now, if you want to make changes to the specific properties for your implementat
 iDaaS-Connect-PublicCloud/src/resource/application.properties file.
 
 Supported properties include:
+```
+server.address=0.0.0.0
+management.address=0.0.0.0
+management.port=9970
+server.port=9970
+server.max-http-header-size=200000
+## Kafka Details
+idaas.kafkaBrokers=localhost:9092
+idaas.integrationTopic=opsmgmt_platformtransactions
+idaas.appintegrationTopic=opsmgmt_platformappintgrtn
+## Audit Settings - Directory Settings
+# Data Integration
+idaas.storeInFs_DataIntegrationAudit=true
+idaas.auditDir_DataIntegrationAuditLocation=/data_output/kic_dataintgrt
+# Application Integration
+idaas.storeInFs_AppIntegrationAudit=true
+idaas.auditDir_AppIntegrationAuditLocation=/data_output/audit_appintegration
+## Relational Database Detail
+# Setting the createDbTable=true will try to autocreate a table
+idaas.createDbTable=false
+idaas.storeInDb=true
+# Relational Database Detail
+idaas.storeInDb_DataIntegrationAudit=true
+idaas.storeInDb_AppIntegrationAudit=true
+# Database Tables
+idaas.isCreateDbTable=false
+idaas.dbIntegrationTableName=intgrtn_insight
+idaas.dbAppIntegrationTableName=appintgrtn_insight
+# Postgres
+idaas.dbDriverClassName=org.postgresql.Driver
+idaas.dbUrl=jdbc:postgresql://localhost:5432/idaas_kic
+idaas.dbPassword=Developer123
+idaas.dbUsername=postgres
+```
+
+*This needs to have a correctly defined database connection with host, post, username and password if you plan on using 
+the Grafana Dashboard or anything related to the seeing data in other than a JSON based file*
+
+Below are the following attributes defined. You will notice that these setting don't contain idaas as that is specific to SpringBoot.
+
+| Attribute Name                 | Attribute Details                                                                                                                                    |
+|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| server.port                    | Used to define what port this assets runs on, sometimes you will also see manangement.port defined                                                   |
+| server.max-http-header-size    | Number of Bytes the server can process when receiving data                                                                                           |
+| server.address                 | 0.0.0.0 means to use all IPs on the machine                                                                                                          |
+| management.address             | 0.0.0.0 means to use all IPs on the machine                                                                                                          |
+| kafkaBrokers                   | All the kafka Brokers involved within the integration, if there are several all can be seperated with a comma host:port, host2:port                  |
+| integrationTopic               | Kafka Topic for processing all auditing and error handing - specific to native iDaaS-Connect assets                                                  |
+| appintegrationTopic | Kafka Topic for all third party application integration processing                                                                                   |
+
+| cloudTopic                     | Kafka Topic for cloud integration with iDaaS Connect                                                                                                 |
+| processPublicCloud             | Setting to determine of PublicCloud will be used (true or flase)                                                                                     |
+| cloudAPI                       | URL to send directly to iDaaS Connect Public Cloud                                                                                                   |
+| fhirConversionTopic            | The Kafka Topic where FHIR conversion data lands                                                                                                     |
+| hl7(msg)_Directory             | A defined directory where HL7 v2 message files can be processed from. These attributes are repeated by (msg) - ADT, ORM,ORU,MDM,MFN,RDE,SCH, and VXU |
+| (msg)Port                      | The defined server port for the specific (msg). These attributes are repeated by (msg) - ADT, ORM,ORU,MDM,MFN,RDE,SCH, and VXU                       |                                                                                                     
+| (msg)ACKResponse               | The processing of ACKs from the sending systems. These attributes are repeated by (msg) - ADT, ORM,ORU,MDM,MFN,RDE,SCH, and VXU                      |
+| (msg)TopicName                 | These attributes are repeated by (msg) - ADT, ORM,ORU,MDM,MFN,RDE,SCH, and VXU                                                                       |
+| hl7ccda_Directory              | Directory to process HL7 CCDA directories from                                                                                                       |
+| ccdaTopicName                  | The Kafka Topic where CCDA inbound data to the platform lands                                                                                        |
+| hl7OverHTTPTopicName           | The Kafka Topic where HL7 data sent over HTTP lands                                                                                                  |
+| convertCCDAToFHIR              | Setting used to evaluate if CCDA transactions will be converted to FHR automatically                                                                 |
+| convertHL7toFHIR               | Setting used to evaluate if HL7 transactions will be converted to FHIR automatically                                                                 |
+| deidentify                     | Future setting: for enabling deidentification to occur                                                                                               |
+| anonymize                      | Future setting: for enabling anonymization to occur                                                                                                  |
+
+## Command Line Argument Passing
+Alternatively, want to have a few unique ways to do this. This will override one specific property via a command line:
+```
+java -jar <jarfile>.jar --server.port=8888
+```
+to run a seperate specific application.properties file. In the example beloe the file is in the config directory
+one level above where the jar is located, you can implement that through the following
+command:
+```
+java -jar <jarfile>.jar --spring.config.location=file:./config/application.properties`
+```
+
+
+
+### Specific Implementation Instructions
+These are specific to getting this solution to run.
+
+#### A. iDaaS KIC
++ You can run the individual efforts with a specific command, it is always recommended you run the mvn clean install first.
+  This assumes you are within the base directory where all the assets where cloned/downloaded to. Here is the command to 
+  run the design pattern from the command line: <br/>
+```
+cd iDaaS-KIC-Integration
+mvn clean install
+mvn spring-boot:run
+ ```
+or
+```
+- Build the jar file as defined above and then run:
+java -jar <jarfile>.jar
+```
+
+### Verfiying that it worked
+- Start iDaaS-KIC (Section A. above this)
+- Make sure that the application.properties or ConfigMap Settings are what you have told others to use, otherwise you 
+will not see data. Use any of the iDaaS-Connect or other components you are using and you should data processing into 
+the iDaaS-KIC platform.
+- Look within Kafka, iDaaS-KIC, or on the system attached to the HL7 Server and look at what it processed.
+
+Happy using and coding....

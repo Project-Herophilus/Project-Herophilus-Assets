@@ -10,11 +10,13 @@ Here is a link to the basic [End User Setup](../Technical/EndUserSetup.md) that 
 OS you choose to run this on.
 
 ## Specific iDaaS Core Platform Implementation Guides - General
+As part of the core platform there are some components that provide a specific benefit to any of the iDaaS or Core
+community assets. These items can be found here.
 
-| Specific Implementation Guides                                 |
-|----------------------------------------------------------------|
-| [iDaaS KIC (Knowledge, Insight and Conformance)](iDaaS-KIC.md) |
-| [Public Cloud](PublicCloud.md) |
+| Specific Implementation Guides                                  |
+|-----------------------------------------------------------------|
+| [iDaaS KIC] (Knowledge, Insight and Conformance)](iDaaS-KIC.md) |
+| [Public Cloud](PublicCloud.md)                                  |
 
 ## Core Community Implementation Guides
 

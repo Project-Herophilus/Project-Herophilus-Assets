@@ -22,8 +22,8 @@ This section covers the running of the solution. There are several options to st
 ## Step 1: Kafka Server To Connect To
 In order for ANY processing to occur you must have a Kafka server running that this accelerator is configured to connect to.
 Please see the following files we have included to try and help: <br/>
-[Kafka Non Windows](https://github.com/RedHat-Healthcare/iDaaS-Demos/blob/master/Kafka.md)<br/>
-[Kafka Windows](https://github.com/RedHat-Healthcare/iDaaS-Demos/blob/master/KafkaWindows.md)<br/>
+[Kafka Non Windows](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/Kafka.md)<br/>
+[Kafka Windows](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/KafkaWindows.md)<br/>
 As with all implementations we also have container based implementations of Kafka as well. These can be very simple to implement
 and include.
 
@@ -112,34 +112,6 @@ idaas.adtACKResponse=true
 idaas.adtTopicName=mctn_mms_adt_client
 ```
 
-## Step 3: Running the App: Maven Commands or Code Editor
-This section covers how to get the application started and running locally. There will be other sections added in the future
-for containers.
-
-### General Instructions
-+ Your system has met all the pre-requisites.
-+ You have cloned the repo(s) or downloaded the zip of rep and unzipped it.
-
-You can run the individual efforts with a specific command, it is always recommended you run the mvn clean install first.
-Here is the command to run the design pattern from the command line: <br/>
-```
-mvn spring-boot:run
- ```
-
-# Running the Java JAR
-To run the code from a jar file.
-+ Your system has met all the pre-requisites.
-+ You have cloned the repo(s) or downloaded the zip of rep and unzipped it.
-+ Maven build: go to the directory of where you have this code. Specifically, you want to be at the same level as the POM.xml file and execute the
-  following command: <br/>
-```
-mvn clean install
-```
-+ Running the built jar from the maven build
-```
-java -jar <jarfile>.jar 
- ```
-
 ### Specific Implementation Instructions
 These are specific to getting this solution to run.
 
@@ -147,6 +119,20 @@ These are specific to getting this solution to run.
 + You can run the individual efforts with a specific command, it is always recommended you run the mvn clean install first.
   Here is the command to run the design pattern from the command line: <br/>
 ```
+cd iDaaS-Connect-HL7
+mvn clean install
+mvn spring-boot:run
+ ```
+or
+```
+java -jar <jarfile>.jar
+```
+#### A. iDaaS Data Simulator HL7
++ You can run the individual efforts with a specific command, it is always recommended you run the mvn clean install first.
+  Here is the command to run the design pattern from the command line: <br/>
+```
+cd HL7
+mvn clean install
 mvn spring-boot:run
  ```
 or
@@ -155,8 +141,11 @@ java -jar <jarfile>.jar
 ```
 
 ### Verfiying that it worked
-- Start your HL7 Server, in this case iDaaS Connect HL7
-- Start
+- Start your HL7 Server (Section A. above this)
+- Make sure that the equivalent iDaaS-DataSimulator-HL7 message type can process files, topic data or however you are currently 
+providing it HL7 messages and then start it.
+- Start the HL7 Data Simulator (Section B. above this)
+- Look within Kafka, iDaaS-KIC, or on the system attached to the HL7 Server and look at what it processed.
 
 Happy using and coding....
 
