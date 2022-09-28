@@ -31,10 +31,9 @@ These are maturing and under development
 
 | Specific Implementation Guides        |
 |---------------------------------------|
-| [Synthetic Data](DataSynthesis.md)    |
 | [DataSimulator-HL7](DataSim-HL7.md)   |
 | [DataSimulator-FHIR](DataSim-FHIR.md) |
-
+| [Synthetic Data](DataSynthesis.md)    |
 
 More of these will be coming as we work to ensure the content is consistent and accurate.
 
