@@ -34,7 +34,7 @@ These are maturing and under development
 | [DataSimulator-HL7](DataSim-HL7.md)   |
 | [DataSimulator-FHIR](DataSim-FHIR.md) |
 | [Synthetic Data](DataSynthesis.md)    |
-| [Deidentification/Anonymization(https://github.com/Project-Herophilus/Defianz/tree/main/DataTier-APIs/Quarkus-APIs)|
+| [Deidentification/Anonymization](https://github.com/Project-Herophilus/Defianz/tree/main/DataTier-APIs/Quarkus-APIs)|
 
 More of these will be coming as we work to ensure the content is consistent and accurate.
 
