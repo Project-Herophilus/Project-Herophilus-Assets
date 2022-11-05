@@ -25,7 +25,7 @@ button and select the Download Zip option.
 ## Java Assets
 This section is specific to the Java centric assets provided.
 
-### Step 1: Building the App: Command Line
+### Building the App: Command Line
 This section covers how to get the application built.
 + Maven: The following steps are needed to run the code. Either through your favorite IDE or command line
 You can either compile at the base directory or go to the specific iDaaS-Connect acceelerator. Specifically, you want to
@@ -34,7 +34,7 @@ be at the same level as the POM.xml file and execute the following command: <br/
 mvn clean install
 ```
 
-### Step 2: Running the App
+### Running the App
 There are several ways and manner we can run the application.
 
 ### Command Line
@@ -44,6 +44,10 @@ just a cleaner way to ensure all the assets are pulled and if anything is needed
 - Here is the command to run the design pattern from the command line: <br/>
 ```
 mvn spring-boot:run
+ ```
+- Here is the command to run the design pattern in Dev mode from the command line:
+```
+mvn spring-boot:run -Dspring-boot.run.profiles=dev
  ```
 - Depending upon if you have every run this code before and what libraries you have already in your local Maven instance
 it could take a few minutes. From a code editor you also can right click on the Application.java in the /src/<application namespace> and select Run
@@ -88,3 +92,10 @@ idaas.hl7ORM_Directory=data/orm
  java -jar <jarfile>.jar --spring.config.location=file:./config/application.properties`
 ```
  
+### Deploying To OpenShift
+
+#### Using The Maven Plugin
+
+ ```
+mvn clean oc:deploy -P openshift -Djkube.generator.from=openshift/fuse7-java11-openshift:1.10 -Djkube.generator.fromMode=istag ```
+

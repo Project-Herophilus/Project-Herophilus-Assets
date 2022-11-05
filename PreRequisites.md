@@ -3,6 +3,14 @@ Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Ma
 For all iDaaS design patterns it should be assumed that you will either install as part of this effort, or have the following:
 
 # General
+- IDE (Possibly). There are several great choices out there several resources we work use wither VS Code with
+numerous plugins or some edition Community or otherwise of JetBrains IntelliJ.
+- Java JDK: Java is what everything is developed in. The current supported JDK release(s) are 1.8 and 11. We strongly
+  recommend 11 as all the build actions and activities we do are based on this JDK release.
+  <a href="https://developers.redhat.com/products/openjdk/download" target=_blank>OpenJDK Download Site</a>.
+- Maven: Some understanding of building, deploying Java artifacts and the commands associated. If using Maven commands then
+  Maven would need to be intalled and runing for the environment you are using. More details about Maven can be
+  found [here](https://maven.apache.org/install.html)<br/>
 - An existing Kafka (or some flavor of it) up and running. We have implemented iDaaS with numerous Kafka implementations. 
 Please see the following files we have included to try and help: <br/>
 [Kafka Non Windows](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/Kafka.md) <br/>
@@ -23,16 +31,7 @@ several open or inexpensive options to chose from and within the community we ha
 - An internet connection with active internet connectivity, this is to ensure that if any Maven commands are
 run and any libraries need to be pulled down they can.<br/>
 
-# Java Centric Assets
-This section applies to iDaaS-Connect.
 
-## Specific Needed Assets
-- Java JDK: Java is what everything is developed in. The current supported JDK release(s) are 1.8 and 11. We strongly 
-recommend 11 as all the build actions and activities we do are based on this JDK release.
-<a href="https://developers.redhat.com/products/openjdk/download" target=_blank>OpenJDK Download Site</a>.
-- Maven: Some understanding of building, deploying Java artifacts and the commands associated. If using Maven commands then 
-Maven would need to be intalled and runing for the environment you are using. More details about Maven can be 
-found [here](https://maven.apache.org/install.html)<br/>
 
 
  

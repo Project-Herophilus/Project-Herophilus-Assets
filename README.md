@@ -4,7 +4,7 @@ Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Ma
 Project-Herophilus is about helping any type of organization leverage healthcare data (modern to legacy) and through our 
 cloud native platform(s) to enable innovation. <br/> 
 
-![Cloud Agnostic](/images/iDaaS-Platform/Implementations/Implementations-Gen-CloudAgnostic.png)
+![Cloud Agnostic](/images/iDaaS-Platform/Implementations-Gen-CloudAgnostic.png)
 
 # iDaaS (intelligent Data as a Service) Platform
 As we thought about how to brand our efforts we ended up settling on iDaaS (Intelligent Data as a Service). The core enablement
