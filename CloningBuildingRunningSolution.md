@@ -96,6 +96,7 @@ idaas.hl7ORM_Directory=data/orm
 
 #### Using The Maven Plugin
 
- ```
-mvn clean oc:deploy -P openshift -Djkube.generator.from=openshift/fuse7-java11-openshift:1.10 -Djkube.generator.fromMode=istag ```
+```
+mvn clean oc:deploy -P openshift -Djkube.generator.from=openshift/fuse7-java11-openshift:1.10 -Djkube.generator.fromMode=istag 
+```
 
