@@ -98,8 +98,8 @@ idaas.hl7ORM_Directory=data/orm
  - Login into the OpenShift console 
  - Select Copy Login Credentials
  - Copy the key login details from the OpenShift console, under the user there is a copy login token, copy it
- - Then, <Insert the entire command on the screen>
- - oc project <your project name>
+ - Then, (Insert the entire command on the screen)
+ - oc project (your project name)
  - Run the mvn command below
 
 ```
