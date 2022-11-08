@@ -55,30 +55,67 @@ java -jar <jarfile>.jar
 
 ### Additional or Advanced Design Pattern/Accelerator Configuration
  
-All iDaaS Design Pattern/Accelelrators have application.properties files to enable some level of reusability of code and simplfying configurational enhancements.<br/>
-In order to run multiple iDaaS integration applications we had to ensure the internal http ports that
-the application uses. In order to do this we MUST set the server.port property otherwise it defaults to port 8080 and ANY additional
-components will fail to start. 
-  
-The following section is designed around the application.properties ssupporting iDaaS Connect HL7; however, it is aplicable across all iDaaS-Connect assets. iDaaS Connect HL7 uses 9980 for its server port (where the user management interface will run from). You can change this, but you will have to ensure other applications are not
-using the port you specify.
+All iDaaS Design Pattern/Accelelrators have application.properties files to enable some level of reusability of code and simplfying configurational enhancements. The following section is designed around the application.properties ssupporting iDaaS Connect HL7; however, it is applicable across all iDaaS-Connect assets. iDaaS Connect HL7 uses 9980 for its server port (where the user management interface will run from). You can change this, but you will have to ensure other applications are not using ports you specify.
 
 ```
-server.port=9980
-# Kafka Configuration - use comma if multiple kafka servers are needed
-idaas.kafkaBrokers=localhost:9092
-# Basics on properties
-idaas.hl7ADT_Directory=data/adt
-idaas.adtPort=10001
-idaas.adtACKResponse=true
-idaas.adtTopicName=mctn_mms_adt
-idaas.hl7ORM_Directory=data/orm
+# Kafka Details and Topics
+idaas.kafka.brokers=localhost:9092
+idaas.ccdapost.topic.name=ccdapost
+idaas.ccdaconversion.topic.name=ccdaconverted
+idaas.hl7conversion.topic.name=hl7converted
+idaas.hl7post.topic.name=hl7post
+idaas.publiccloud.topic.name=cloud
+idaas.terminology.topic.name=terminologies
+idaas.deidentification.topic.name=deidentification
+idaas.processacks.topic.name=hl7acks
+idaas.datatier.topic.name=datatier
+idass.heda.topic.name=hedainbound
+idass.sdoh.topic.name=sdoh
+idaas.hl7adt.topic.name=adt
+idaas.hl7mdm.topic.name=mdm
+idaas.hl7mfn.topic.name=mfn
+idaas.hl7orm.topic.name=orm
+idaas.hl7oru.topic.name=oru
+idaas.hl7rde.topic.name=rde
+idaas.hl7sch.topic.name=sch
+idaas.hl7vxu.topic.name=vxu
+# HL7 Ports
+idaas.port.adt=10001
+idaas.port.mdm=10002
+idaas.port.mfn=10003
+idaas.port.orm=10004
+idaas.port.oru=10005
+idaas.port.rde=10006
+idaas.port.sch=10007
+idaas.port.vxu=10008
+# Processes
+idaas.process.PublicCloud=true
+idaas.process.Terminologies=true
+idaas.process.Sdoh=true
+idaas.process.Deidentification=false
+idaas.process.Empi=false
+idaas.process.Acks=true
+idaas.process.DataTier=false
+idass.process.HEDA=false
+# Conversions
+idaas.convert.CCDAtoFHIR=true
+idaas.convert.HL7toFHIR=true
+# External APIs
+idaas.api.deidentification=http://localhost:8001/api/deidentification
+idaas.api.empi=http://localhost:8001/api/empi
+idaas.api.cloud=urlendpoint
+# Other Settings
+aws.access.key=
+aws.secret.key=
+aws.region=US_EAST_1
+aws.region.lower=us-east-1
+aws.bucket=public-idaas
 ```
 ### Specific Examples of using Parameters  
 
  - To specify one different attribute being changed
  ```
- java -jar <jarfile>.jar --idaas.adtPort=10009
+ java -jar <jarfile>.jar --idaas.port.adt=10001
  ```
  - To use a properties file in a custom location 
  ```
