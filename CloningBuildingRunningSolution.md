@@ -105,5 +105,5 @@ idaas.hl7ORM_Directory=data/orm
  7. Run the mvn command below
 
 ```
-mvn clean oc:deploy -P openshift -Djkube.generator.from=openshift/fuse7-java11-openshift:1.10 -Djkube.generator.fromMode=istag![image](https://user-images.githubusercontent.com/64438147/200469551-50087cb6-9470-4e2e-b8d5-db036dc1e562.png)
+mvn clean oc:deploy -P openshift -Djkube.generator.from=openshift/fuse7-java11-openshift:1.10 -Djkube.generator.fromMode=istag
 ```
