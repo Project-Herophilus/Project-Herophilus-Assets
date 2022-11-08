@@ -30,25 +30,16 @@ This section covers how to get the application built.
 + Maven: The following steps are needed to run the code. Either through your favorite IDE or command line
 You can either compile at the base directory or go to the specific iDaaS-Connect acceelerator. Specifically, you want to
 be at the same level as the POM.xml file and execute the following command: <br/>
-```
-mvn clean install
-```
 
-### Running the App
-There are several ways and manner we can run the application.
-
-### Command Line
-You dont necessarily have to run Step 3 first; however, personnel experience and several contributors have strongly expressed that it is
-just a cleaner way to ensure all the assets are pulled and if anything is needed or issues the mvn clean install should show it.
-
-- Here is the command to run the design pattern from the command line: <br/>
+- Traditional, Spring-Boot style build. You will need resources/application-dev.properties to application.properties and you can then run: 
 ```
 mvn spring-boot:run
- ```
-- Here is the command to run the design pattern in Dev mode from the command line:
+```
+- Here is the command to run the design pattern in Dev mode from the command line. This uses the settings in the resources/application-dev.properties
 ```
 mvn spring-boot:run -Dspring-boot.run.profiles=dev
  ```
+
 - Depending upon if you have every run this code before and what libraries you have already in your local Maven instance
 it could take a few minutes. From a code editor you also can right click on the Application.java in the /src/<application namespace> and select Run
 
@@ -56,6 +47,8 @@ it could take a few minutes. From a code editor you also can right click on the 
 If you don't run the code from an editor or from the maven commands above. You can compile the code through the maven
 commands above to build a jar file. Then, go to the /target directory and run the following command: <br/>
 
+- You will need to build a jar file.
+- Run the jar file with the standard command:
 ```
 java -jar <jarfile>.jar 
 ```
