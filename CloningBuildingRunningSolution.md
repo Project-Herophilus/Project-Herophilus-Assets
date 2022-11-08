@@ -96,7 +96,14 @@ idaas.hl7ORM_Directory=data/orm
 
 #### Using The Maven Plugin
 
-```
-mvn clean oc:deploy -P openshift -Djkube.generator.from=openshift/fuse7-java11-openshift:1.10 -Djkube.generator.fromMode=istag 
-```
+	1. Be in the specific directory of the module/submodule you will be deploying
+ 2. Login into the OpenShift console 
+ 3. Select Copy Login Credentials
+	4. Copy the key login details from the OpenShift console, under the user there is a copy login token, copy it
+	5. <Insert the entire command on the screen>
+	6. oc project <your project name>
+ 7. Run the mvn command below
 
+```
+mvn clean oc:deploy -P openshift -Djkube.generator.from=openshift/fuse7-java11-openshift:1.10 -Djkube.generator.fromMode=istag![image](https://user-images.githubusercontent.com/64438147/200469551-50087cb6-9470-4e2e-b8d5-db036dc1e562.png)
+```
