@@ -36,16 +36,6 @@ mvn spring-boot:run -Dspring-boot.run.profiles=dev
 - Depending upon if you have every run this code before and what libraries you have already in your local Maven instance
 it could take a few minutes. From a code editor you also can right click on the Application.java in the /src/<application namespace> and select Run
 
-### Locally Running the Java JAR
-You can compile the code through the maven commands above to build a jar file. Then, go to the /target directory and run the following command: <br/>
-
-- If you want the local management UI you will need to uncomment the hawtio and jokolia dependencies from both the mater POM.xml file and the specific
-modules POM.xml file as well.
-- Run the jar file with the standard command:
-```
-java -jar <jarfile>.jar 
-```
-
 ### Additional or Advanced Design Pattern/Accelerator Configuration
  
 All iDaaS Design Pattern/Accelelrators have application-dev.properties files to enable some level of reusability of code and simplfying configurational enhancements. The following section is designed around the application.properties ssupporting iDaaS Connect HL7; however, it is applicable across all iDaaS-Connect assets. iDaaS Connect HL7 uses 9980 for its server port (where the user management interface will run from). You can change this, but you will have to ensure other applications are not using ports you specify.
@@ -104,8 +94,18 @@ aws.region=US_EAST_1
 aws.region.lower=us-east-1
 aws.bucket=public-idaas
 ```
-### Specific Examples of using Parameters  
+## Step 4: Deployment Locally
 
+You can compile the code through the maven commands above to build a jar file. Then, go to the /target directory and run the following command: <br/>
+
+- If you want the local management UI you will need to uncomment the hawtio and jokolia dependencies from both the mater POM.xml file and the specific
+  modules POM.xml file as well.
+- Run the jar file with the standard command:
+```
+java -jar <jarfile>.jar 
+```
+
+### Deploying Locally and Changing Params
  - To specify one different attribute being changed
  ```
  java -jar <jarfile>.jar --idaas.port.adt=10001
@@ -115,13 +115,23 @@ aws.bucket=public-idaas
  java -jar <jarfile>.jar --spring.config.location=file:./config/application.properties`
 ```
  
-### Deploying To OpenShift (Using The Maven Plugin)
+## Step 4: Deploying To OpenShift (Using The Maven Plugin)
+There are a few steps. 
+
+Before beginning there are a few key things:
+
+| Item                          | Specific Details                                                                                       |                                                                       
+|-------------------------------|--------------------------------------------------------------------------------------------------------|
+| OpenShift CLI                 |https://docs.openshift.com/container-platform/4.11/cli_reference/openshift_cli/getting-started-cli.html |
+| Create a Project in OpenShift |https://docs.openshift.com/container-platform/4.11/applications/projects/working-with-projects.html|
+
+Here are the steps:
 
  - Be in the specific directory of the module/submodule you will be deploying
- - Login into the OpenShift console 
- - Select Copy Login Credentials
- - Copy the key login details from the OpenShift console, under the user there is a copy login token, copy it
- - Then, (Insert the entire command on the screen)
+ - Login into the OpenShift console, underneath the user account select the Copy Login Command
+ - Select Display Token Link
+ - Copy the key login details from the OpenShift console underneath the "Log in with this token" section
+ - From a command line copy the entire command and press Enter. This will login you into the OpenShift specific environment
  - oc project (your project name)
  - Run the mvn command below
 
