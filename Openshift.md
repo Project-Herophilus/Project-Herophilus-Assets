@@ -20,9 +20,10 @@ There are some recommendations for implementation that we have found helpful.
 Before starting any deployments it is recommended that you install the following Operators to provide the best experience supporting deployed applications with a management user interface and also providing a robust means to see detailed logs in many ways and leverage a very solid way to build and use dashboards.
 
 - Fuse Console
+- AMQ Streams
 - Kibana
 - Grafana
 
 ## How to deploy to OpenShift
-While there are many ways this can be done we have one very effective and efficient way, it is documented here().
+While there are many ways this can be done we have one very effective and efficient way, it is [documented here](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/CloningBuildingRunningSolution.md).
 
