@@ -4,7 +4,7 @@ Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Ma
 This content is designws to cover the specific topic of Building and Running an iDaaS solution. While there are references to specific solutions 
 named within this content it is meant to show how to implement specifics.
 
-## Step 1: Kafka Server To Connect To
+## Step 1: Kafka Server For Data Routing
 In order for ANY processing to occur you must have a Kafka server running that this accelerator is configured to connect to.
 Please see the following files we have included to try and help: <br/>
 [Kafka Non-Windows](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/Kafka.md)<br/>
@@ -22,19 +22,12 @@ git clone https://github.com/Project-Herophilus/iDaaS-Connect.git
 + You can also go ahead and download the code from a specific repository and then unzip it as well. To download just click on the Code
 button and select the Download Zip option.
 
-## Java Assets
-This section is specific to the Java centric assets provided.
-
-### Building the App: Command Line
+## Step 3: Building the App: Command Line
 This section covers how to get the application built.
 + Maven: The following steps are needed to run the code. Either through your favorite IDE or command line
 You can either compile at the base directory or go to the specific iDaaS-Connect acceelerator. Specifically, you want to
 be at the same level as the POM.xml file and execute the following command: <br/>
 
-- Traditional, Spring-Boot style build. You will need resources/application-dev.properties to application.properties and you can then run: 
-```
-mvn spring-boot:run
-```
 - Here is the command to run the design pattern in Dev mode from the command line. This uses the settings in the resources/application-dev.properties
 ```
 mvn spring-boot:run -Dspring-boot.run.profiles=dev
@@ -43,11 +36,11 @@ mvn spring-boot:run -Dspring-boot.run.profiles=dev
 - Depending upon if you have every run this code before and what libraries you have already in your local Maven instance
 it could take a few minutes. From a code editor you also can right click on the Application.java in the /src/<application namespace> and select Run
 
-### Running the Java JAR
-If you don't run the code from an editor or from the maven commands above. You can compile the code through the maven
-commands above to build a jar file. Then, go to the /target directory and run the following command: <br/>
+### Locally Running the Java JAR
+You can compile the code through the maven commands above to build a jar file. Then, go to the /target directory and run the following command: <br/>
 
-- You will need to build a jar file.
+- If you want the local management UI you will need to uncomment the hawtio and jokolia dependencies from both the mater POM.xml file and the specific
+modules POM.xml file as well.
 - Run the jar file with the standard command:
 ```
 java -jar <jarfile>.jar 
@@ -55,7 +48,7 @@ java -jar <jarfile>.jar
 
 ### Additional or Advanced Design Pattern/Accelerator Configuration
  
-All iDaaS Design Pattern/Accelelrators have application.properties files to enable some level of reusability of code and simplfying configurational enhancements. The following section is designed around the application.properties ssupporting iDaaS Connect HL7; however, it is applicable across all iDaaS-Connect assets. iDaaS Connect HL7 uses 9980 for its server port (where the user management interface will run from). You can change this, but you will have to ensure other applications are not using ports you specify.
+All iDaaS Design Pattern/Accelelrators have application-dev.properties files to enable some level of reusability of code and simplfying configurational enhancements. The following section is designed around the application.properties ssupporting iDaaS Connect HL7; however, it is applicable across all iDaaS-Connect assets. iDaaS Connect HL7 uses 9980 for its server port (where the user management interface will run from). You can change this, but you will have to ensure other applications are not using ports you specify.
 
 ```
 # Kafka Details and Topics
