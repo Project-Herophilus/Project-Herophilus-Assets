@@ -3,6 +3,10 @@ Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Ma
 # OpenShift
 Is the leading application development and delivery platform built atop Kubernetes.  
 
+Kubernetes: https://kubernetes.io <br/>
+OpenShift Open Source Community: https://www.okd.io/installation/ <br/>
+Commercial Version: https://www.redhat.com/en/technologies/cloud-computing/openshift
+
 ## Pre-Requisites
 There are no known pre-requisites for any specific environment needs except having OpenShift 4.9 or above installed and ready for implementation.
 
