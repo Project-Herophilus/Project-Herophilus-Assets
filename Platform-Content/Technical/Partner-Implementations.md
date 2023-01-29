@@ -1,7 +1,7 @@
 ﻿Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Main GitHub Org. Site</a>
 
 # intelligent DaaS Partner Implementations
-iDaaS is enabling organizations to make data a product and build assets on top of it. Because <b>"Data is the asset!!!"</b> iDaaS is about enabling information for knowledge that can be used for action in a secure and scalable manner. Along with helping organizations it is also being used and adopted by numerous system integrators. Since doing our first release in May of 2020 we have so appreciated those customers and systems integrators that have implemented their solutions and solution offerings powered with iDaaS.
+Healthcare Data Foundation (HDF) is enabling organizations to make data a product and build assets on top of it. Because <b>"Data is the asset!!!"</b> Healthcare Data Foundation (HDF) is about enabling information for knowledge that can be used for action in a secure and scalable manner. Along with helping organizations it is also being used and adopted by numerous system integrators. Since doing our first release in May of 2020 we have so appreciated those customers and systems integrators that have implemented their solutions and solution offerings powered with Healthcare Data Foundation (HDF).
 
 |Vendor|Image|
 |---|---|
@@ -16,4 +16,4 @@ iDaaS is enabling organizations to make data a product and build assets on top o
 |Red Hat|<img src="../../images/vendors/redhat_logo.png" alt="RedHat Logo" width="300">|   
 |Red Hat Services|<img src="../../images/vendors/redhat_services.png" alt="RedHat Services Logo" width="300">|   
 
-<p>We will continue to maintain this page periodically as we are working with numerous healthcare payers and providers actively on iDaaS implementations and offerings.</p>
+<p>We will continue to maintain this page periodically as we are working with numerous healthcare payers and providers actively on Healthcare Data Foundation (HDF) implementations and offerings.</p>

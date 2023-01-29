@@ -3,7 +3,7 @@ Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Ma
 # Background
 For this specific development image I started with RHEL 8.3; however, I also ran the on RHEL 8.5. As for the install 
 typically the installs are the Server with GUI where lots of development tools and libraries are selected.
-The ONLY development language required for iDaaS specifically is Java SDK. The other development
+The ONLY development language required for Healthcare Data Foundation (HDF) specifically is Java SDK. The other development
 languages are used for a variety of efforts and needs. We don't cover Python in this section but those
 instructions can be easily found online.
 
@@ -28,7 +28,7 @@ Changing ownership and groups examples https://www.thegeekstuff.com/2012/06/chow
 
 # Development Tools
 The following are all the development tools and the supporting assets needed to do some form of development and
-implementation of iDaaS reference architectures.
+implementation of Healthcare Data Foundation (HDF) reference architectures.
 
 ### Code Repository Management
 
@@ -48,7 +48,7 @@ From the command line: <br>
 
 ### Development Language(s)
 
-The ONLY development language required for iDaaS specifically is Java SDK. The other development
+The ONLY development language required for Healthcare Data Foundation (HDF) specifically is Java SDK. The other development
 languages are used for a potential other variety of efforts and needs. Also, we don't cover Python in this section but those
 instructions can be easily found online.
 
@@ -56,7 +56,7 @@ instructions can be easily found online.
 
 Platform comes with OpenJDK 8. Based on needs feel free to update system to (not just JREs) as you need.
 For this environment we will install Java OpenJDK 11. We have also had committers and resources leveraging
-iDaaS running Open JDK 11, 13, 14 and 15 as well, As with everything it is critical to make sure
+Healthcare Data Foundation (HDF) running Open JDK 11, 13, 14 and 15 as well, As with everything it is critical to make sure
 that you only run approved technologies. <br>
 From the command line:<br>
 ```yum install java-11-openjdk-devel```
@@ -67,7 +67,7 @@ sudo update-alternatives --config java
 ```
 #### NodeJS
 Node has continued to grow and expand in capabilities are features. We are currently starting to 
-use it within iDaaS and various other iDaaS open source assets, the plans are to continue to expand 
+use it within Healthcare Data Foundation (HDF) and various other Healthcare Data Foundation (HDF) open source assets, the plans are to continue to expand 
 how we leverage it in 2022.<br/>
 <a href="https://nodejs.org/en/" target="_blank">Node JS Web Site</a><br>
 ```
@@ -75,7 +75,7 @@ dnf module install nodejs:<stream>
 ```
 
 #### .Net Core
-While not currently used within iDaaS there are plans to start leveraging it in 2021.<br/>
+While not currently used within Healthcare Data Foundation (HDF) there are plans to start leveraging it in 2021.<br/>
         <a href="https://docs.microsoft.com/en-us/dotnet/core/install/linux" target="_blank">.Net Core Linux</a><br>
         <a href="https://docs.microsoft.com/en-us/dotnet/core/install/linux-rhel" target="_blank">.Net Core on Linux</a><br>
         From the command line: <br>
@@ -85,7 +85,7 @@ While not currently used within iDaaS there are plans to start leveraging it in 
 # Development Tooling
 
 ## IntelliJ
-These specific steps focus around IntelliJ, numerous contributors and resources working with iDaaS use some
+These specific steps focus around IntelliJ, numerous contributors and resources working with Healthcare Data Foundation (HDF) use some
 flavor of IntelliJ. For simplicity we will download the files to /username/home/Downloads.
 
 ### Toolbox App

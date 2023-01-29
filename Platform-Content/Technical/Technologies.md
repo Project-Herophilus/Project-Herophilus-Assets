@@ -22,7 +22,7 @@ also are aware of others that have implemented JMS and RabbitMQ based implementa
 We currently are moving to support DDLs for multiple RDBMS platforms ; however, this project uses Postgres. This is 
 because there is wide adoption of these within healthcare. The first few implementations with be SQL Server DDL centric as 
 well finalize data model validation. We also intend to expand towards NoSQL standards
-quickly as we continue to implement new features. Connected Health/iDaaS overall objective 
+quickly as we continue to implement new features. Healthcare Data Foundation (HDF) overall objective 
 is to ensure we help define data as an asset.
 # Hybrid/Multi-Cloud
 When and where possible this reference architecture/design pattern is completely designed to be cloud native. 

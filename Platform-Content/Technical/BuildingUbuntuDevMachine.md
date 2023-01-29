@@ -26,7 +26,7 @@ Changing ownership and groups examples https://www.thegeekstuff.com/2012/06/chow
 
 # Development Tools
 The following are all the development tools and the supporting assets needed to do some form of development and
-implementation of iDaaS reference architectures.
+implementation of Healthcare Data Foundation (HDF) reference architectures.
 
 ### Code Repository/Artifact Management
 
@@ -44,7 +44,7 @@ From the command line: <br>
 
 ### Development Language(s)
 
-The ONLY development language required for iDaaS specifically is Java SDK. The other development
+The ONLY development language required for Healthcare Data Foundation (HDF) specifically is Java SDK. The other development
 languages are used for a potential other variety of efforts and needs. Also, we don't cover Python in this section but those
 instructions can be easily found online.
 
@@ -52,7 +52,7 @@ instructions can be easily found online.
 
 Platform comes with OpenJDK 8. Based on needs feel free to update system to (not just JREs) as you need.
 For this environment we will install Java OpenJDK 11. We have also had committers and resources leveraging
-iDaaS running Open JDK 11, 13, 14 and 15 as well, As with everything it is critical to make sure
+Healthcare Data Foundation (HDF) running Open JDK 11, 13, 14 and 15 as well, As with everything it is critical to make sure
 that you only run approved technologies. From the command line:<br>
 ```
 sudo apt-get install openjdk-11-jdk

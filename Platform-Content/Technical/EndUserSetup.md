@@ -1,7 +1,7 @@
 Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Main GitHub Org. Site</a>
 
 # Setting Up and End User Environment
-As we worked to establish iDaaS we wanted to ensure that we could enable complex platforms and systems to
+As we worked to establish Healthcare Data Foundation (HDF) we wanted to ensure that we could enable complex platforms and systems to
 be extended, developed and delivered. It is very important to keep the end user development
 experience as simple as possible, our focus is to enable developers to be running in minutes. We have had 
 developers leverage Macs, Windows (Server and Desktop) OS, Red Hat Enterprise Linux and Ubuntu for development
@@ -16,7 +16,7 @@ technologies as we continue to progress.
 ### Java JDK
 Java is what everything is developed in. While we list JDK 8 SDK you can run a Java SDKs from
 version 8, 11, 13,14 and 15. We have leveraged all these JDKs and been able to build, compile and run the
-code within the community leveraging iDaaS.
+code within the community leveraging Healthcare Data Foundation (HDF).
 <br>
 We always recommend to consult upstream technologies to ensure these products
 are certified and will run beyond a developer machine. We have also seen some tweaks needed in POM files for

@@ -9,7 +9,7 @@ grow the capabilities we deliver.
 As we have continued to mature we have added in Defects and Discussions to all repositories and work 
 to continue focusing on all the ways we communicate with our partners.
 
-## iDaaS Design Patterns/Reference Architecture(s)
+## Healthcare Data Foundation (HDF) Design Patterns/Reference Architecture(s)
 
 Please reference the [Platform Component Specifics](../Design/PlatformComponents.md) for details on each named implementation if needed. 
 

@@ -2,7 +2,7 @@ Return to the <a href="https://github.com/Project-Herophilus" target="_blank">Ma
 
 [//]: # ([iDaaS Word Art]&#40;https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/images/iDaaS-Platform/iDAAS-Web-WordCloud.png&#41;)
 
-# iDaaS Implementation Guides
+# Healthcare Data Foundation (HDF) Implementation Guides
 Below are common links to help you navigate all the specific implementation guides.
 All communications we receive influences our [Technical Roadmap](../Roadmap/index.md).
 
@@ -18,7 +18,7 @@ community assets. These items can be found here.
 | [iDaaS KIC(Knowledge, Insight and Conformance)](iDaaS-KIC.md) |
 | [Public Cloud](PublicCloud.md)                                 |
 
-## Specific iDaaS Capabilities
+## Specific Healthcare Data Foundation (HDF) Capabilities
 
 | Specific Implementation Guides |
 |--------------------------------|

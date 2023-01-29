@@ -10,11 +10,11 @@ Project Name|Capability|Repo Location |
 | -------------|---|----------|
 |DataSynthesis|Synthetic Data/Terminologies and Data Testing Platform|https://github.com/RedHat-Healthcare/DataSynthesis.git|
 
-## Project Herophilus iDaaS and Others
+## Project Herophilus Healthcare Data Foundation (HDF) and Others
 These are open source offerings that are freely avaiable to anyone, provided "as-is".
 
 
-## Red Hat Healthcare iDaaS (Downstream Implementations)
+## Red Hat Healthcare Healthcare Data Foundation (HDF) (Downstream Implementations)
 These are usable for anyone with a Red Hat Fuse/Middleware license. As w always, these are provided
 "as is" and are accelerators to help get organizations functioning quickly that are dealing with
 any form of healthcare data.

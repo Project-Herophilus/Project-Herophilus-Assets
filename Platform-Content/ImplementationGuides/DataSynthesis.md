@@ -8,7 +8,7 @@ This data flow of how iDaaS KIC.
 ![Data Flow](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/images/iDaaS-Platform/DataFlow-PublicCloud.png)
 
 # Platform General Pre-Requisites
-For all iDaaS design patterns it should be assumed that you will either install as part of this effort or need the
+For all Healthcare Data Foundation (HDF) design patterns it should be assumed that you will either install as part of this effort or need the
 [following](https://github.com/Project-Herophilus/Project-Herophilus-Assets/blob/main/PreRequisites.md).
 
 ## Cloning, Building and Running Solutions
